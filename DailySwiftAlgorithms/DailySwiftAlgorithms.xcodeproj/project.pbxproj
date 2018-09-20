@@ -13,6 +13,9 @@
 		B4B2D8562148BBB1008534BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4B2D8552148BBB1008534BA /* Assets.xcassets */; };
 		B4B2D8592148BBB1008534BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4B2D8572148BBB1008534BA /* LaunchScreen.storyboard */; };
 		B4B2D8622148BDEE008534BA /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B2D8612148BDEE008534BA /* Util.swift */; };
+		B4F9E5E22153F13300DB96CD /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E5E12153F13300DB96CD /* Stack.swift */; };
+		B4F9E5E52153F15100DB96CD /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E5E42153F15100DB96CD /* List.swift */; };
+		B4F9E5E82153F5DF00DB96CD /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E5E72153F5DF00DB96CD /* Queue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		B4B2D85A2148BBB1008534BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4B2D8602148BBC1008534BA /* DailySwiftAlgorithms.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DailySwiftAlgorithms.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B4B2D8612148BDEE008534BA /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		B4F9E5E12153F13300DB96CD /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		B4F9E5E42153F15100DB96CD /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		B4F9E5E72153F5DF00DB96CD /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 		B4B2D84D2148BBB1008534BA /* DailySwiftAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
+				B4F9E5E32153F13B00DB96CD /* 链表 */,
+				B4F9E5E62153F16900DB96CD /* 队列 */,
+				B4F9E5E02153F11700DB96CD /* 栈 */,
 				B4B2D84E2148BBB1008534BA /* AppDelegate.swift */,
 				B4B2D8502148BBB1008534BA /* ViewController.swift */,
 				B4B2D8522148BBB1008534BA /* Main.storyboard */,
@@ -67,6 +76,30 @@
 				B4B2D8612148BDEE008534BA /* Util.swift */,
 			);
 			path = DailySwiftAlgorithms;
+			sourceTree = "<group>";
+		};
+		B4F9E5E02153F11700DB96CD /* 栈 */ = {
+			isa = PBXGroup;
+			children = (
+				B4F9E5E12153F13300DB96CD /* Stack.swift */,
+			);
+			path = "栈";
+			sourceTree = "<group>";
+		};
+		B4F9E5E32153F13B00DB96CD /* 链表 */ = {
+			isa = PBXGroup;
+			children = (
+				B4F9E5E42153F15100DB96CD /* List.swift */,
+			);
+			path = "链表";
+			sourceTree = "<group>";
+		};
+		B4F9E5E62153F16900DB96CD /* 队列 */ = {
+			isa = PBXGroup;
+			children = (
+				B4F9E5E72153F5DF00DB96CD /* Queue.swift */,
+			);
+			path = "队列";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F9E5E22153F13300DB96CD /* Stack.swift in Sources */,
+				B4F9E5E82153F5DF00DB96CD /* Queue.swift in Sources */,
 				B4B2D8512148BBB1008534BA /* ViewController.swift in Sources */,
 				B4B2D8622148BDEE008534BA /* Util.swift in Sources */,
+				B4F9E5E52153F15100DB96CD /* List.swift in Sources */,
 				B4B2D84F2148BBB1008534BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
