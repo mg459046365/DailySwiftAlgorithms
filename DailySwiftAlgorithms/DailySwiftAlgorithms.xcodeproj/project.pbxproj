@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4656BCD21777D3500C840D8 /* QueueByStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4656BCC21777D3500C840D8 /* QueueByStack.swift */; };
+		B4656BCF21778A9A00C840D8 /* StackByQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4656BCE21778A9A00C840D8 /* StackByQueue.swift */; };
 		B4B2D84F2148BBB1008534BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B2D84E2148BBB1008534BA /* AppDelegate.swift */; };
 		B4B2D8512148BBB1008534BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B2D8502148BBB1008534BA /* ViewController.swift */; };
 		B4B2D8542148BBB1008534BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4B2D8522148BBB1008534BA /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4656BCC21777D3500C840D8 /* QueueByStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueByStack.swift; sourceTree = "<group>"; };
+		B4656BCE21778A9A00C840D8 /* StackByQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackByQueue.swift; sourceTree = "<group>"; };
 		B4B2D84B2148BBB1008534BA /* DailySwiftAlgorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailySwiftAlgorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B2D84E2148BBB1008534BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4B2D8502148BBB1008534BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				B4F9E5E12153F13300DB96CD /* Stack.swift */,
+				B4656BCC21777D3500C840D8 /* QueueByStack.swift */,
 			);
 			path = "栈";
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				B4F9E5E72153F5DF00DB96CD /* Queue.swift */,
+				B4656BCE21778A9A00C840D8 /* StackByQueue.swift */,
 			);
 			path = "队列";
 			sourceTree = "<group>";
@@ -176,6 +182,8 @@
 				B4F9E5E22153F13300DB96CD /* Stack.swift in Sources */,
 				B4F9E5E82153F5DF00DB96CD /* Queue.swift in Sources */,
 				B4B2D8512148BBB1008534BA /* ViewController.swift in Sources */,
+				B4656BCF21778A9A00C840D8 /* StackByQueue.swift in Sources */,
+				B4656BCD21777D3500C840D8 /* QueueByStack.swift in Sources */,
 				B4B2D8622148BDEE008534BA /* Util.swift in Sources */,
 				B4F9E5E52153F15100DB96CD /* List.swift in Sources */,
 				B4B2D84F2148BBB1008534BA /* AppDelegate.swift in Sources */,
