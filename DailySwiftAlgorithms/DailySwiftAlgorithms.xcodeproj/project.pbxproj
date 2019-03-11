@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B45AA2FB22358FF7006867D9 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AA2FA22358FF7006867D9 /* Tree.swift */; };
 		B4656BCD21777D3500C840D8 /* QueueByStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4656BCC21777D3500C840D8 /* QueueByStack.swift */; };
 		B4656BCF21778A9A00C840D8 /* StackByQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4656BCE21778A9A00C840D8 /* StackByQueue.swift */; };
 		B4B2D84F2148BBB1008534BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B2D84E2148BBB1008534BA /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B45AA2FA22358FF7006867D9 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		B4656BCC21777D3500C840D8 /* QueueByStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueByStack.swift; sourceTree = "<group>"; };
 		B4656BCE21778A9A00C840D8 /* StackByQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackByQueue.swift; sourceTree = "<group>"; };
 		B4B2D84B2148BBB1008534BA /* DailySwiftAlgorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailySwiftAlgorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B45AA2F922358FC9006867D9 /* 树 */ = {
+			isa = PBXGroup;
+			children = (
+				B45AA2FA22358FF7006867D9 /* Tree.swift */,
+			);
+			path = "树";
+			sourceTree = "<group>";
+		};
 		B4B2D8422148BBB1008534BA = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 		B4B2D84D2148BBB1008534BA /* DailySwiftAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
+				B45AA2F922358FC9006867D9 /* 树 */,
 				B4F9E5E32153F13B00DB96CD /* 链表 */,
 				B4F9E5E62153F16900DB96CD /* 队列 */,
 				B4F9E5E02153F11700DB96CD /* 栈 */,
@@ -182,6 +193,7 @@
 				B4F9E5E22153F13300DB96CD /* Stack.swift in Sources */,
 				B4F9E5E82153F5DF00DB96CD /* Queue.swift in Sources */,
 				B4B2D8512148BBB1008534BA /* ViewController.swift in Sources */,
+				B45AA2FB22358FF7006867D9 /* Tree.swift in Sources */,
 				B4656BCF21778A9A00C840D8 /* StackByQueue.swift in Sources */,
 				B4656BCD21777D3500C840D8 /* QueueByStack.swift in Sources */,
 				B4B2D8622148BDEE008534BA /* Util.swift in Sources */,

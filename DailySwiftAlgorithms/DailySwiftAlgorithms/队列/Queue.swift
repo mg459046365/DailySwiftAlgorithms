@@ -14,6 +14,7 @@ class Queue<Element> {
     /// 数组
     var leftList: [Element]
     var rightList: [Element]
+    
     /// 是否为空
     var isEmpty: Bool { return leftList.isEmpty && rightList.isEmpty  }
     /// 队列的大小

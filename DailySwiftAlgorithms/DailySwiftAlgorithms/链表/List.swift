@@ -60,7 +60,7 @@ class List {
         return head!
     }
 
-    /// 创建链表
+    /// 创建链表，尾插法
     class func createList() -> List {
         var head: List?
         var cur: List?
@@ -127,6 +127,7 @@ class List {
         return newHead!
     }
 
+    // 是否存在环形链表
     class func hasCycle(_ head: List?) -> Bool {
         var slow: List? = head
         var fast: List? = head
