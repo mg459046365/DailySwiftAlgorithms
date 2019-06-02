@@ -13,7 +13,7 @@ struct SortUtils {
     
     ///冒泡排序  O(n^2)
     ///原理：比较相邻的元素。如果第一个比第二个大，就交换他们。
-    ///对每一对相邻元素做同样的操作,从开始第一对到结尾的最后一对。在这一点，最后的元素改该会是最大的。
+    ///对每一对相邻元素做同样的操作,从开始第一对到结尾的最后一对。在这一点，最后的元素该会是最大的。
     ///针对所有的元素重复以上的步骤，除了最后一个。
     ///持续每次对越来越少的的元素重复上面的步骤，直到没有任何一对数字需要比较
     static func bubbleSort(_ list: inout [Int]) {
@@ -56,20 +56,23 @@ struct SortUtils {
         guard list.count > 1 else {
             return
         }
+        
         for i in 1 ..< list.count {
             var low = 0
             var hight = i - 1;
             while low <= hight {
-                let mid = (hight + low)/2
+                let mid = (hight - low)/2 + low
                 if list[i] > list[mid]{
                     low = mid + 1
                 }else{
                     hight = mid - 1
                 }
             }
-            let tmp = list[i]
-            list.remove(at: i)
-            list.insert(tmp, at: low)
+            if i != low {
+                for i in (low ..< i).reversed() {
+                    (list[i], list[i+1]) = (list[i+1], list[i])
+                }
+            }
         }
     }
     
