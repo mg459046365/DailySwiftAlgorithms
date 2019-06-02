@@ -17,6 +17,7 @@ class Tree {
     var right: Tree?
     
     var result = [Int]();
+    var levelResult = [[Int]]()
     
     
     init(_ value: Int) {
@@ -124,7 +125,17 @@ class Tree {
         return result
     }
     
-   
+    /// 翻转二叉树，递归的方式
+    func invertTree(_ root: Tree?) -> Tree? {
+        if root == nil {
+            return nil
+        }
+        let res = root
+        (res!.left, res!.right) = (res!.right, res!.left)
+        _ = invertTree(res!.left)
+        _ = invertTree(res!.right)
+        return res
+    }
     
     
 
@@ -154,9 +165,36 @@ class Tree {
         
     }
     
-    /// 中序遍历方法。如果是二叉查找树，中序遍历必须是递增的。
-    func inorderTraversal(node: Tree?) -> Bool {
-        return false
+    /// 二叉树的层级遍历
+    func levelOrder(_ root: Tree?) -> [[Int]] {
+        help(root != nil ? [root!] : nil)
+        return levelResult
     }
+    
+    func help(_ list: [Tree]?)  {
+        if list == nil || list!.isEmpty {
+            return
+        }
+        var array = [Int]()
+        var nextList = [Tree]()
+        for node in list! {
+            array.append(node.value)
+            if node.left != nil {
+                nextList.append(node.left!)
+            }
+            if node.right != nil {
+                nextList.append(node.right!)
+            }
+        }
+        if !array.isEmpty {
+            levelResult.append(array)
+        }
+        help(nextList)
+    }
+    
+    
+    
+    
+    
     
 }
