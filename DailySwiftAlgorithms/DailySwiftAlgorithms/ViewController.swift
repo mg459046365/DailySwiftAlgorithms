@@ -24,7 +24,6 @@ class ViewController: UIViewController {
         let obj = NumArray(nums)
         let ret_1 = obj.sumRange(0, 5)
         
-        
        var result = [81, 94, 11, 96 ,12 ,35, 17, 95, 28, 58, 41, 75, 15]
         
 //        result = [1,2,3,4,5,6,7,8]
@@ -32,8 +31,8 @@ class ViewController: UIViewController {
        /// 冒泡排序
 //       SortUtils.maoPaoSort(&result)
 //        SortUtils.directInsertSort(&result);
-        SortUtils.shellSort(&result)
-//        SortUtils.halfInsertSort(&result);
+//        SortUtils.shellSort(&result)
+        SortUtils.halfInsertSort(&result);
 //        SortUtils.selecteSort(&result);
 //        result = SortUtils.quickSort(result)
 //        result = MegerSort.mergeSort(&result)
@@ -110,7 +109,7 @@ class ViewController: UIViewController {
 //        let ss = countSegments("            ")
 //        var result = [Character("a"),Character("a"),Character("b"),Character("b"),Character("c"),Character("c"),Character("c")]
 //        let count = compress(&result)
-        let ss = maxCommonDivisor(3, 5)
+//        let ss = maxCommonDivisor(3, 5)
         print("\(result)")
         
         
@@ -1885,6 +1884,7 @@ class ViewController: UIViewController {
     
     
     
+    /// 柯里化特性
     func add(_ num: Int) -> (Int) -> Int {
         
         func interAdd(_ val: Int) -> Int {

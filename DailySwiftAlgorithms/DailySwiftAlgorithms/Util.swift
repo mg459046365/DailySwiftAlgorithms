@@ -39,4 +39,39 @@ struct Util {
             end -= 1
         }
     }
+    
+    
+    /// 去掉字符串中不相邻的重复字符
+    /// - Parameter str: 待处理的字符串
+    static func deleteSameChar(_ str: String) -> String {
+        guard str.count > 2 else {
+            return str
+        }
+        var tmp = str;
+        var dic = [Character: Int]()
+        for i in 0 ..< str.count {
+            let ichar = str[str.index(str.startIndex, offsetBy: i)]
+            if let index = dic[ichar] {
+                if i != index + 1 {
+                    tmp.remove(at: str.index(str.startIndex, offsetBy: i))
+                }
+            }else{
+               dic[ichar] = i
+            }
+        }
+        return tmp
+//        
+//        
+//        for i in 0 ..< str.count {
+//            let ichar = str[str.index(str.startIndex, offsetBy: i)]
+//            for j in i+1 ..< str.count {
+//                let jchar = str[str.index(str.startIndex, offsetBy: j)]
+//                if ichar == jchar, j != i+1 {
+//                    tmp.remove(at: str.index(str.startIndex, offsetBy: j))
+//                }
+//            }
+//        }
+//        
+//        return tmp
+    }
 }
