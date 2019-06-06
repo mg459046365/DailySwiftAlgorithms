@@ -32,7 +32,7 @@ class ViewController: UIViewController {
 //       SortUtils.maoPaoSort(&result)
 //        SortUtils.directInsertSort(&result);
 //        SortUtils.shellSort(&result)
-        SortUtils.halfInsertSort(&result);
+//        SortUtils.halfInsertSort(&result);
 //        SortUtils.selecteSort(&result);
 //        result = SortUtils.quickSort(result)
 //        result = MegerSort.mergeSort(&result)
@@ -110,9 +110,8 @@ class ViewController: UIViewController {
 //        var result = [Character("a"),Character("a"),Character("b"),Character("b"),Character("c"),Character("c"),Character("c")]
 //        let count = compress(&result)
 //        let ss = maxCommonDivisor(3, 5)
+        SortUtils.quickSort(&result, startIndex: 0, endIndex: result.count - 1)
         print("\(result)")
-        
-        
     }
     /// 求最大公约数
     func maxCommonDivisor(_ a: Int, _ b: Int) -> Int {

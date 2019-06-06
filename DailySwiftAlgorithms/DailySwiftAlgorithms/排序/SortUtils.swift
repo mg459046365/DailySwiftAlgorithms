@@ -99,33 +99,84 @@ struct SortUtils {
     ///快速排序  O(nlogn)
     ///原理：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据都比另外一部分的所有数据都要小，
     ///然后再按此方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，以此达到整个数据变成有序序列。对冒泡排序的改进。
-    static func quickSort(_ list: [Int]) -> [Int]{
-        
-        guard list.count > 1 else {
-            return list
-        }
-        
-        /// 取中间的数作为参照
-        let value = list[list.count/2]
-        let left = list.filter { $0 < value }
-        let right = list.filter { $0 > value }
-        let middle = list.filter{ $0 == value}
-//        let tmp = list[list.count/2]
-//        var left = [Int]()
-//        var mid = [Int]()
-//        var right = [Int]()
-//
-//        for i in 0 ..< list.count {
-//            if list[i] < tmp {
-//                left.append(list[i])
-//            }else if list[i] > tmp {
-//                right.append(list[i])
-//            }else{
-//                mid.append(list[i])
-//            }
+//    static func quickSort(_ list: [Int]) -> [Int]{
+//        
+//        guard list.count > 1 else {
+//            return list
 //        }
-        return quickSort(left) + middle + quickSort(right)
+//        
+//        /// 取中间的数作为参照
+//        let value = list[list.count/2]
+//        let left = list.filter { $0 < value }
+//        let right = list.filter { $0 > value }
+//        let middle = list.filter{ $0 == value}
+////        let tmp = list[list.count/2]
+////        var left = [Int]()
+////        var mid = [Int]()
+////        var right = [Int]()
+////
+////        for i in 0 ..< list.count {
+////            if list[i] < tmp {
+////                left.append(list[i])
+////            }else if list[i] > tmp {
+////                right.append(list[i])
+////            }else{
+////                mid.append(list[i])
+////            }
+////        }
+//        return quickSort(left) + middle + quickSort(right)
+//    }
+//    
+    static func quickSort(_ list: inout [Int], startIndex: Int, endIndex: Int)  {
+        if list.count < 2 {
+            return;
+        }
+        if startIndex >= endIndex {
+            return;
+        }
+        //双边循环法
+        let cursor = quickSortHelper(&list, startIndex: startIndex, endIndex: endIndex)
+        //单边循环法
+//        let cursor = quickSortHelper1(&list, startIndex: startIndex, endIndex: endIndex)
+        quickSort(&list, startIndex: startIndex, endIndex: cursor - 1)
+        quickSort(&list, startIndex: cursor+1, endIndex: endIndex)
     }
+    
+    /// 快速排序双边循环法
+    static func quickSortHelper(_ list: inout [Int], startIndex: Int, endIndex: Int) -> Int {
+        let startValue = list[startIndex]
+        var left = startIndex
+        var right = endIndex
+        
+        while left < right {
+            while left < right, list[right] > startValue {
+                right -= 1
+            }
+            while left < right,list[left] <= startValue {
+                left += 1
+            }
+            if left < right {
+                (list[left], list[right]) = (list[right], list[left])
+            }
+        }
+        (list[startIndex], list[left]) = (list[left], list[startIndex])
+        return left
+    }
+    /// 快速排序单边循环法
+    static func quickSortHelper1(_ list: inout [Int], startIndex: Int, endIndex: Int) -> Int {
+        let startValue = list[startIndex]
+        var markIndex = startIndex
+        for index in startIndex ... endIndex {
+            if list[index] < startValue {
+                markIndex += 1
+                (list[index], list[markIndex]) = (list[markIndex], list[index])
+            }
+        }
+        (list[startIndex], list[markIndex]) = (list[markIndex], list[startIndex])
+        return markIndex
+    }
+    
+    
     
     ///希尔排序 O(n^（1.3—2))
     ///希尔排序是把记录按下标的一定增量分组，对每组使用直接插入排序算法排序；随着增量逐渐减少，
