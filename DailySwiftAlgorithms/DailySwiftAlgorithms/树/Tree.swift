@@ -113,13 +113,21 @@ class Tree {
         // 缓存节点
         var stack = [Tree]()
         var node = root
+        var right: Tree?
         while !stack.isEmpty || node != nil {
             if node != nil {
-                result.append(node!.value)
                 stack.append(node!)
                 node = node?.left
             }else{
-                node = stack.removeLast().right
+                node = stack.last
+                if node!.right == nil || node!.right === right {
+                    result.append(node!.value)
+                    stack.removeLast()
+                    right = node
+                    node = nil
+                }else{
+                   node = node!.right
+                }
             }
         }
         return result

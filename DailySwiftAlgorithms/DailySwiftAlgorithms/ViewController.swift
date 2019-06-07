@@ -479,7 +479,7 @@ class ViewController: UIViewController {
         if s.isEmpty {
             return -1
         }
-        var dic = [Character: (Int, Int)]()
+//        var dic = [Character: (Int, Int)]()
         
         var cDic = [Character: Int]()
         var cDicIndex = [Character: Int]()
