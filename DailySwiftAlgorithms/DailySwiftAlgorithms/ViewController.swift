@@ -111,7 +111,8 @@ class ViewController: UIViewController {
 //        let count = compress(&result)
 //        let ss = maxCommonDivisor(3, 5)
 //        SortUtils.quickSort(&result, startIndex: 0, endIndex: result.count - 1)
-        Heap.buildHeap(&result)
+//        Heap.buildHeap(&result)
+//        Heap.heapSort(&result);
         print("\(result)")
     }
     /// 求最大公约数
