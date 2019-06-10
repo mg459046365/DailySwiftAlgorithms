@@ -18,7 +18,7 @@ class NumArray {
         if i == j {
             return self.nums[i]
         }
-        var sums = [Int]()
+//        var sums = [Int]()
         
         var l = i
         var r = j
@@ -30,18 +30,18 @@ class NumArray {
         }
         sum += self.nums[l]
         return sum
-        
-        for k in 0 ... j {
-            if k == 0 {
-                sums.append(self.nums[k])
-            }else{
-                sums.append(sums.last! + self.nums[k])
-            }
-        }
-        if i == 0 {
-            return sums.last!
-        }
-        return sums.last! - sums[i - 1]
+//
+//        for k in 0 ... j {
+//            if k == 0 {
+//                sums.append(self.nums[k])
+//            }else{
+//                sums.append(sums.last! + self.nums[k])
+//            }
+//        }
+//        if i == 0 {
+//            return sums.last!
+//        }
+//        return sums.last! - sums[i - 1]
     }
 }
 

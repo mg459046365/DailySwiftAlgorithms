@@ -19,10 +19,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
        super.viewDidLoad()
         let nums = [-2, 0, 3, -5, 2, -1]
-        let nums2 = [-2, 0, 0, -5, 7, 9]
+//        let nums2 = [-2, 0, 0, -5, 7, 9]
 //        let numsnums2 = nums.inte 
         let obj = NumArray(nums)
-        let ret_1 = obj.sumRange(0, 5)
+//        let ret_1 = obj.sumRange(0, 5)
         
        var result = [81, 94, 11, 96 ,12 ,35, 17, 95, 28, 58, 41, 75, 15]
         
@@ -110,7 +110,8 @@ class ViewController: UIViewController {
 //        var result = [Character("a"),Character("a"),Character("b"),Character("b"),Character("c"),Character("c"),Character("c")]
 //        let count = compress(&result)
 //        let ss = maxCommonDivisor(3, 5)
-        SortUtils.quickSort(&result, startIndex: 0, endIndex: result.count - 1)
+//        SortUtils.quickSort(&result, startIndex: 0, endIndex: result.count - 1)
+        Heap.buildHeap(&result)
         print("\(result)")
     }
     /// 求最大公约数
@@ -1795,7 +1796,7 @@ class ViewController: UIViewController {
     }
     
     func romanToInt(_ s: String) -> Int {
-        var dic:[String : Int] = ["I" : 1, "V" : 5, "X" : 10, "L" : 50, "C" : 100, "D" : 500, "M" : 1000]
+        let dic:[String : Int] = ["I" : 1, "V" : 5, "X" : 10, "L" : 50, "C" : 100, "D" : 500, "M" : 1000]
         var res: Int = 0
         var i = 0
         var nextVal: Int = 0
