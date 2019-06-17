@@ -249,17 +249,6 @@ struct SortUtils {
         }
     }
     
-    ///桶排序    O(n)
-    ///原理: 将数组分到有限数量的桶子里。
-    ///每个桶子再个别排序（有可能再使用别的排序算法或是以递归方式继续使用桶排序进行排序）。
-    ///桶排序是鸽巢排序的一种归纳结果。当要被排序的数组内的数值是均匀分配的时候，桶排序使用线性时间（Θ（n））
-    
-    static func bucketSort(_ list: inout [Int]) {
-        list.sort()
-        _ = list.sorted(by: >)
-    }
-    
-    
     /// 二分查找，如果找到返回索引,前提数组是有序的
     static func halfSearch(_ list: [Int], target: Int) -> Int? {
         guard list.count > 1 else {
@@ -285,6 +274,40 @@ struct SortUtils {
         }
         return nil
     }
+    
+    ///桶排序    O(n)
+    ///原理: 将数组分到有限数量的桶子里。
+    ///每个桶子再个别排序（有可能再使用别的排序算法或是以递归方式继续使用桶排序进行排序）。
+    ///桶排序是鸽巢排序的一种归纳结果。当要被排序的数组内的数值是均匀分配的时候，桶排序使用线性时间（Θ（n））
+    static func bucketSort(_ list: [Int]) -> [Int] {
+        
+        // 得到数组中最大值和最小值，并算出差值
+        var maxValue = list[0]
+        var minValue = list[0]
+        for value in list {
+            maxValue = max(maxValue, value)
+            minValue = min(minValue, value)
+        }
+        // 算差值
+        let difValue = maxValue - minValue
+        
+        // 初始化桶,桶的个数为元素的个数
+        var buckets = Array(repeating: [Int](), count: list.count)
+        // 遍历原始数组，将每个元素放入桶中
+        for value in list {
+            let num = (value - minValue) * (list.count - 1)/difValue
+            buckets[num].append(value)
+        }
+        var result = [Int]()
+        for i in 0 ..< buckets.count {
+            var lt = buckets[i]
+            lt.sort()
+            buckets[i] = lt
+            result.append(contentsOf: lt)
+        }
+        return result
+    }
+    
 }
 
 

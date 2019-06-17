@@ -142,6 +142,29 @@ class List {
         }
         return false
     }
+    
+    /// 判断链表中是否有环，并返回环的长度，如果没有环直接返回0即可
+    class func cycleLength(_ head: List?) -> Int {
+        var slow: List? = head
+        var fast: List? = head
+        var hasCycle = false
+        var length = 0
+        while fast != nil && fast!.next != nil {
+            slow = slow!.next
+            fast = fast!.next!.next
+            if hasCycle {
+                length += 1
+            }
+            if slow === fast {
+                if hasCycle {
+                    return length;
+                }
+                hasCycle = true
+            }
+        }
+        return 0
+    }
+    
 
     /// 给出一个链表和一个x值，要求将链表中所有小于x的值放到左边，所有大于或等于x的值放到右边，并且原链表的节点顺序不能变。
     ///

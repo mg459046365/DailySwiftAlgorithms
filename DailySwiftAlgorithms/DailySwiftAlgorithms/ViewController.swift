@@ -21,11 +21,11 @@ class ViewController: UIViewController {
         let nums = [-2, 0, 3, -5, 2, -1]
 //        let nums2 = [-2, 0, 0, -5, 7, 9]
 //        let numsnums2 = nums.inte 
-        let obj = NumArray(nums)
+//        let obj = NumArray(nums)
 //        let ret_1 = obj.sumRange(0, 5)
         
        var result = [81, 94, 11, 96 ,12 ,35, 17, 95, 28, 58, 41, 75, 15]
-        
+       result = SortUtils.bucketSort(result);
 //        result = [1,2,3,4,5,6,7,8]
 //       print("排序前的result=\(result)")
        /// 冒泡排序
