@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 //    var nums = [Int]()
     override func viewDidLoad() {
        super.viewDidLoad()
-        let nums = [-2, 0, 3, -5, 2, -1]
+//        let nums = [-2, 0, 3, -5, 2, -1]
 //        let nums2 = [-2, 0, 0, -5, 7, 9]
 //        let numsnums2 = nums.inte 
 //        let obj = NumArray(nums)

@@ -9,9 +9,10 @@
 import Foundation
 
 /// 链表
-class List {
+class ListNode {
+    
     var val: Int
-    var next: List?
+    var next: ListNode?
 
     init(_ val: Int) {
         self.val = val
@@ -22,11 +23,11 @@ class List {
     ///
     /// - Parameter val:
     /// - Returns:
-    class func appendToTail(_ vals: [Int]) -> List {
-        var head: List?
-        var cur: List?
+    class func appendToTail(_ vals: [Int]) -> ListNode {
+        var head: ListNode?
+        var cur: ListNode?
         for value in vals {
-            let node = List(value)
+            let node = ListNode(value)
             if cur == nil {
                 cur = node
             } else {
@@ -44,11 +45,11 @@ class List {
     ///
     /// - Parameter vals:
     /// - Returns:
-    class func appendToHead(_ vals: [Int]) -> List {
-        var head: List?
-        var cur: List?
+    class func appendToHead(_ vals: [Int]) -> ListNode {
+        var head: ListNode?
+        var cur: ListNode?
         for value in vals {
-            let node = List(value)
+            let node = ListNode(value)
             if cur == nil {
                 cur = node
             } else {
@@ -61,16 +62,16 @@ class List {
     }
 
     /// 创建链表，尾插法
-    class func createList() -> List {
-        var head: List?
-        var cur: List?
+    class func createList() -> ListNode {
+        var head: ListNode?
+        var cur: ListNode?
         for i in 1 ..< 11 {
-            let list = List(i)
+            let node = ListNode(i)
             if cur == nil {
-                cur = list
+                cur = node
             } else {
-                cur!.next = list
-                cur = list
+                cur!.next = node
+                cur = node
             }
             if head == nil {
                 head = cur
@@ -80,16 +81,16 @@ class List {
     }
 
     /// 创建链表
-    class func createCycleList() -> List {
-        var head: List?
-        var cur: List?
+    class func createCycleList() -> ListNode {
+        var head: ListNode?
+        var cur: ListNode?
         for i in 1 ..< 7 {
-            let list = List(i)
+            let node = ListNode(i)
             if cur == nil {
-                cur = list
+                cur = node
             } else {
-                cur!.next = list
-                cur = list
+                cur!.next = node
+                cur = node
             }
             if head == nil {
                 head = cur
@@ -100,8 +101,8 @@ class List {
     }
 
     /// 打印链表
-    class func printList(_ list: List) {
-        var tmp: List? = list
+    class func printList(_ head: ListNode) {
+        var tmp: ListNode? = head
         print("打印链表")
         var index = 0
         while tmp != nil {
@@ -115,9 +116,9 @@ class List {
     }
 
     /// 反转链表
-    func reverseList(_ list: List) -> List {
-        var newHead: List?
-        var curHead: List? = list
+    func reverseList(_ head: ListNode) -> ListNode {
+        var newHead: ListNode?
+        var curHead: ListNode? = head
         while curHead != nil {
             let tmplist = curHead!.next
             curHead!.next = newHead
@@ -128,9 +129,9 @@ class List {
     }
 
     /// 是否存在环形链表
-    class func hasCycle(_ head: List?) -> Bool {
-        var slow: List? = head
-        var fast: List? = head
+    class func hasCycle(_ head: ListNode?) -> Bool {
+        var slow: ListNode? = head
+        var fast: ListNode? = head
         while fast != nil && fast!.next != nil {
             slow = slow!.next
             fast = fast!.next!.next
@@ -144,9 +145,9 @@ class List {
     }
     
     /// 判断链表中是否有环，并返回环的长度，如果没有环直接返回0即可
-    class func cycleLength(_ head: List?) -> Int {
-        var slow: List? = head
-        var fast: List? = head
+    class func cycleLength(_ head: ListNode?) -> Int {
+        var slow: ListNode? = head
+        var fast: ListNode? = head
         var hasCycle = false
         var length = 0
         while fast != nil && fast!.next != nil {
@@ -165,21 +166,40 @@ class List {
         return 0
     }
     
-
+    /// 求循环链表中的入环点
+    func cycleStartNode(_ head: ListNode) -> ListNode {
+        var slow: ListNode? = head
+        var fast: ListNode? = head
+        while fast != nil && fast!.next != nil {
+            slow = slow!.next
+            fast = fast!.next!.next
+            if slow === fast {
+                break;
+            }
+        }
+        slow = head;
+        while slow !== head {
+            slow = slow!.next
+            fast = fast?.next
+        }
+        return slow!
+    }
+    
+    
     /// 给出一个链表和一个x值，要求将链表中所有小于x的值放到左边，所有大于或等于x的值放到右边，并且原链表的节点顺序不能变。
     ///
     /// - Parameters:
     ///   - head: 链表头
     ///   - x: 给定的x值
     /// - Returns: 新的链表
-    func partition(_ head: List?, _ x: Int) -> List? {
+    func partition(_ head: ListNode?, _ x: Int) -> ListNode? {
         // 引入Dummy(虚拟)节点
 
         // 用于左边的排序
-        let prevDummy = List(0)
+        let prevDummy = ListNode(0)
         var prev = prevDummy
         // 用于右边的排序
-        let postDummy = List(0)
+        let postDummy = ListNode(0)
         var post = postDummy
 
         var node = head
@@ -213,7 +233,7 @@ class List {
 //    找终止条件
 //    想想应该返回什么值
 //    本步应该做什么
-    func mergerTwoList(_ l1: List?, _ l2: List?) -> List? {
+    func mergerTwoList(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         //递归的终止条件：l1,l2其中一个走到头了或者两者同时走到头
         guard l1 != nil else {
             return l2
@@ -232,11 +252,11 @@ class List {
 //        l2.next = mergerTwoList(l2.next, l1)
 //         return l2
         
-        let res: List = List(0)
-        var cur: List? = res
+        let res: ListNode = ListNode(0)
+        var cur: ListNode? = res
         
-        var list1: List? = l1
-        var list2: List? = l2
+        var list1: ListNode? = l1
+        var list2: ListNode? = l2
         
         
         while list1 != nil, list1 != nil {

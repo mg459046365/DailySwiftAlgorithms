@@ -24,7 +24,7 @@
 		B4B2D8622148BDEE008534BA /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B2D8612148BDEE008534BA /* Util.swift */; };
 		B4BF9C4622A4182D00FEFC45 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF9C4522A4182D00FEFC45 /* Test.swift */; };
 		B4F9E5E22153F13300DB96CD /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E5E12153F13300DB96CD /* Stack.swift */; };
-		B4F9E5E52153F15100DB96CD /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E5E42153F15100DB96CD /* List.swift */; };
+		B4F9E5E52153F15100DB96CD /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E5E42153F15100DB96CD /* ListNode.swift */; };
 		B4F9E5E82153F5DF00DB96CD /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E5E72153F5DF00DB96CD /* Queue.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +50,7 @@
 		B4B2D8612148BDEE008534BA /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		B4BF9C4522A4182D00FEFC45 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		B4F9E5E12153F13300DB96CD /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
-		B4F9E5E42153F15100DB96CD /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		B4F9E5E42153F15100DB96CD /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		B4F9E5E72153F5DF00DB96CD /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,7 +152,7 @@
 		B4F9E5E32153F13B00DB96CD /* 链表 */ = {
 			isa = PBXGroup;
 			children = (
-				B4F9E5E42153F15100DB96CD /* List.swift */,
+				B4F9E5E42153F15100DB96CD /* ListNode.swift */,
 			);
 			path = "链表";
 			sourceTree = "<group>";
@@ -252,7 +252,7 @@
 				B4B2D8622148BDEE008534BA /* Util.swift in Sources */,
 				B45AA2FF2236DE1E006867D9 /* SortUtils.swift in Sources */,
 				B45AA3032238E3D2006867D9 /* FibonacciSequence.swift in Sources */,
-				B4F9E5E52153F15100DB96CD /* List.swift in Sources */,
+				B4F9E5E52153F15100DB96CD /* ListNode.swift in Sources */,
 				B4B2D84F2148BBB1008534BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
