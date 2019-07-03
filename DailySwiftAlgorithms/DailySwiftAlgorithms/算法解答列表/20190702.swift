@@ -62,6 +62,7 @@ struct Helper_20190702 {
             //a为奇数，b为偶数
             return bestGetGCD(a, b>>1)
         }
+        //a,b都为奇数
         return bestGetGCD(max(a, b) - min(a, b), min(a, b))
     }
     
