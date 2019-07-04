@@ -42,13 +42,14 @@ struct User {
 struct UserDefault<T> {
     let key: String
     let defaultValue: T
+    //属性包装器支持自定义构造器
     init(_ key: String, defaultValue: T) {
         print("UserDefault init")
         self.key = key
         self.defaultValue = defaultValue
         UserDefaults.standard.register(defaults: [key: defaultValue])
     }
-    var value: T {
+    var wrappedValue: T {
         get {
             print("getter")
             return UserDefaults.standard.object(forKey: key) as? T ??  defaultValue
@@ -71,11 +72,9 @@ struct User2 {
 class TestPropertyWrapper {
     func testFunc() {
         print("hello world")
-        let user = User2()
+        var user = User2()
         User2.usesTouchID = true
-        let delegate = User2.$usesTouchID
-        print("\(delegate)")
-        let detelate2 = user.$isLoggedIn
+        user.isLoggedIn = true
     }
 }
 /**
@@ -94,4 +93,75 @@ struct User2 {
     var isLoggedIn: Bool
 }
 */
+
+
+@propertyWrapper
+struct LateInitialized<Value> {
+    private var storage: Value?
+    var wrappedValue: Value {
+        get {
+            guard let value = storage else { fatalError("value has not yet been set!") }
+            return value
+        }
+        set {
+            storage = newValue
+        }
+   }
+}
+
+//MARK: - struct中嵌套Class的拷贝问题（直接在struct中定义class类型的变量，struct拷贝时该class类型的变量是指针拷贝, 也就是浅复制）
+
+protocol Copyable: AnyObject {
+    func copy() -> Copyable
+}
+
+@propertyWrapper
+struct CopyOnWrite<Value: Copyable> {
+    private var store: Value
+    init(initialValue: Value) {
+        store = initialValue
+    }
+    var wrappedValue: Value {
+        mutating get {
+            if !isKnownUniquelyReferenced(&store) {
+                store = store.copy() as! Value
+            }
+            return store
+        }
+        set {
+            store = newValue
+        }
+    }
+}
+
+class CopyOnWriteTestModel: Copyable {
+    var val: String = ""
+    func copy() -> Copyable {
+        let mode = CopyOnWriteTestModel()
+        mode.val = val
+        return mode
+    }
+}
+
+struct PropertyWrapperTest {
+    @LateInitialized var text: String
+    /** 编译器会把属性代码展开，生成如下代码
+     var $text: LateInitialized<String> = LateInitialized<String>()
+     public var text: String {
+     get { $text.value }
+     set { $text.value = newValue }
+     }
+     */
+    let pps = ["a", "b", "c"]
+    var color: String
+    @CopyOnWrite var model: CopyOnWriteTestModel
+    
+    func test() {
+        let model = CopyOnWriteTestModel()
+        model.val = "测试"
+        let _ = PropertyWrapperTest(color: "sss", model: model)
+    }
+}
+
+
 
