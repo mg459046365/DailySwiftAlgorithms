@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         
        var result = [81, 94, 11, 96 ,12 ,35, 17, 95, 28, 58, 41, 75, 15]
        result = SortUtils.bucketSort(result);
+       let maxDiff = Helper_20190705.getMaxDvalue2(result)
 //        result = [1,2,3,4,5,6,7,8]
 //       print("排序前的result=\(result)")
        /// 冒泡排序
@@ -114,6 +115,7 @@ class ViewController: UIViewController {
 //        Heap.buildHeap(&result)
 //        Heap.heapSort(&result);
         print("\(result)")
+        print("最大差值\(maxDiff)")
     }
     /// 求最大公约数
     func maxCommonDivisor(_ a: Int, _ b: Int) -> Int {

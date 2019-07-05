@@ -31,6 +31,7 @@
 		B4BF9C4622A4182D00FEFC45 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF9C4522A4182D00FEFC45 /* Test.swift */; };
 		B4D97AA922CB90E90056BDE5 /* 算法解答目录.md in Resources */ = {isa = PBXBuildFile; fileRef = B4D97AA822CB90E90056BDE5 /* 算法解答目录.md */; };
 		B4D97AAB22CB95420056BDE5 /* 20190702.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D97AAA22CB95420056BDE5 /* 20190702.swift */; };
+		B4E7D9E222CF01C900D1C044 /* 20190705.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E7D9E122CF01C900D1C044 /* 20190705.swift */; };
 		B4F9E5E22153F13300DB96CD /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E5E12153F13300DB96CD /* Stack.swift */; };
 		B4F9E5E52153F15100DB96CD /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E5E42153F15100DB96CD /* ListNode.swift */; };
 		B4F9E5E82153F5DF00DB96CD /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E5E72153F5DF00DB96CD /* Queue.swift */; };
@@ -65,6 +66,7 @@
 		B4BF9C4522A4182D00FEFC45 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		B4D97AA822CB90E90056BDE5 /* 算法解答目录.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "算法解答目录.md"; sourceTree = "<group>"; };
 		B4D97AAA22CB95420056BDE5 /* 20190702.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190702.swift; sourceTree = "<group>"; };
+		B4E7D9E122CF01C900D1C044 /* 20190705.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190705.swift; sourceTree = "<group>"; };
 		B4F9E5E12153F13300DB96CD /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		B4F9E5E42153F15100DB96CD /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		B4F9E5E72153F5DF00DB96CD /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				B42AB93022CA331200EE0650 /* 20190701.swift */,
 				B4D97AAA22CB95420056BDE5 /* 20190702.swift */,
 				B48E6ACA22CE2A7000601236 /* 20190704.swift */,
+				B4E7D9E122CF01C900D1C044 /* 20190705.swift */,
 			);
 			path = "算法解答列表";
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				B4B2D8512148BBB1008534BA /* ViewController.swift in Sources */,
 				B48E6ACB22CE2A7000601236 /* 20190704.swift in Sources */,
 				B4D97AAB22CB95420056BDE5 /* 20190702.swift in Sources */,
+				B4E7D9E222CF01C900D1C044 /* 20190705.swift in Sources */,
 				B45AA2FB22358FF7006867D9 /* Tree.swift in Sources */,
 				B42AB91522C9EDAE00EE0650 /* someArrayExtension.swift in Sources */,
 				B42AB91822C9EED200EE0650 /* PropertyWrapper.swift in Sources */,
