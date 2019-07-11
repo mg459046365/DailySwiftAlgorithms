@@ -20,7 +20,7 @@ class StackByQueue<Element> {
     
     ///队列A，负责入栈
     var queueA: Queue<Element>
-    ///队列B，负责出栈
+    ///队列B，辅助出栈
     var queueB: Queue<Element>
 
     init() {
