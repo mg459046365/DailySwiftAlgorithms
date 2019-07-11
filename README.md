@@ -6,7 +6,7 @@
 
 [Swift知识点](https://github.com/mg459046365/DailySwiftAlgorithms/tree/master/DailySwiftAlgorithms/DailySwiftAlgorithms/Swift知识点)主要是记录了平时学习Swift过程中的小的Tip。
 
-1. [Dynamic Member Lookup](https://github.com/mg459046365/DailySwiftAlgorithms/tree/master/DailySwiftAlgorithms/DailySwiftAlgorithms/Swift知识点/Dynamic Member Lookup)
+1. [Dynamic Member Lookup](https://github.com/mg459046365/DailySwiftAlgorithms/tree/master/DailySwiftAlgorithms/DailySwiftAlgorithms/Swift知识点/Dynamic%20Member%20Lookup)
 2. [属性包装器](https://github.com/mg459046365/DailySwiftAlgorithms/tree/master/DailySwiftAlgorithms/DailySwiftAlgorithms/Swift知识点/属性包装器)
 3. [不透明类型some](https://github.com/mg459046365/DailySwiftAlgorithms/tree/master/DailySwiftAlgorithms/DailySwiftAlgorithms/Swift知识点/不透明类型(some))
 
