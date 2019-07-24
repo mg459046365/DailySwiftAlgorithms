@@ -8,131 +8,131 @@
 
 import UIKit
 
-
-
 class ViewController: UIViewController {
-    var dic:[Int: Int] = [1:1, 2:2]
+    var dic: [Int: Int] = [1: 1, 2: 2]
     var list = [String]()
     var sDic = [Character: Int]()
     var tDic = [Character: Int]()
-//    var nums = [Int]()
+    //    var nums = [Int]()
     override func viewDidLoad() {
-       super.viewDidLoad()
-//        let nums = [-2, 0, 3, -5, 2, -1]
-//        let nums2 = [-2, 0, 0, -5, 7, 9]
-//        let numsnums2 = nums.inte 
-//        let obj = NumArray(nums)
-//        let ret_1 = obj.sumRange(0, 5)
+        super.viewDidLoad()
+        //        let nums = [-2, 0, 3, -5, 2, -1]
+        //        let nums2 = [-2, 0, 0, -5, 7, 9]
+        //        let numsnums2 = nums.inte
+        //        let obj = NumArray(nums)
+        //        let ret_1 = obj.sumRange(0, 5)
         
-       var result = [81, 94, 11, 96 ,12 ,35, 17, 95, 28, 58, 41, 75, 15]
-       result = SortUtils.bucketSort(result);
-       let maxDiff = Helper_20190705.getMaxDvalue2(result)
-//        result = [1,2,3,4,5,6,7,8]
-//       print("排序前的result=\(result)")
-       /// 冒泡排序
-//       SortUtils.maoPaoSort(&result)
-//        SortUtils.directInsertSort(&result);
-//        SortUtils.shellSort(&result)
-//        SortUtils.halfInsertSort(&result);
-//        SortUtils.selecteSort(&result);
-//        result = SortUtils.quickSort(result)
-//        result = MegerSort.mergeSort(&result)
-//        SortUtils.heapSort(&result)
-//        let ss = SortUtils.halfSearch(result, target: 6)
-//        let a = FibonacciSequence.Fib(10)
-//        let b = FibonacciSequence.Fib1(10)
-//        let c = FibonacciSequence.Fib2(10)
-//        print("排序后的result=\(a), \(b), \(c)")
+        var result = [81, 94, 11, 96, 12, 35, 17, 95, 28, 58, 41, 75, 15]
+        result = SortUtils.bucketSort(result)
+        let maxDiff = Helper_20190705.getMaxDvalue2(result)
+        //        result = [1,2,3,4,5,6,7,8]
+        //       print("排序前的result=\(result)")
+        /// 冒泡排序
+        //       SortUtils.maoPaoSort(&result)
+        //        SortUtils.directInsertSort(&result);
+        //        SortUtils.shellSort(&result)
+        //        SortUtils.halfInsertSort(&result);
+        //        SortUtils.selecteSort(&result);
+        //        result = SortUtils.quickSort(result)
+        //        result = MegerSort.mergeSort(&result)
+        //        SortUtils.heapSort(&result)
+        //        let ss = SortUtils.halfSearch(result, target: 6)
+        //        let a = FibonacciSequence.Fib(10)
+        //        let b = FibonacciSequence.Fib1(10)
+        //        let c = FibonacciSequence.Fib2(10)
+        //        print("排序后的result=\(a), \(b), \(c)")
         
-//        let af = add(2)
-//        let bf = add(3)
+        //        let af = add(2)
+        //        let bf = add(3)
         
-//        print("加2 = \(af(4)), 加3 = \(bf(4))")
+        //        print("加2 = \(af(4)), 加3 = \(bf(4))")
         
-//        let ar = (0...10).map{$0 * $0}.filter{$0 % 2 == 0}
-//        let a = isPalindrome(1001)
-//        let a = romanToInt("III")
-//        var str: String = ""
+        //        let ar = (0...10).map{$0 * $0}.filter{$0 % 2 == 0}
+        //        let a = isPalindrome(1001)
+        //        let a = romanToInt("III")
+        //        var str: String = ""
         
+        //        let a = longestCommonPrefix(["aca","cba"])
         
-//        let a = longestCommonPrefix(["aca","cba"])
-       
-//       let a = countAndSay(5)//        removeElement(&res, 2)
-//        var ss:[Int] = [1, 2,3]
-//        ss.insert(<#T##newElement: Int##Int#>, at: <#T##Int#>)
-//
-//        let sss = plusOne([9])
-    
-//        let a = isValid("((")
-//        let sss = addBinary("11", "1")
-//        let sss = climbStairs(3)
-//
-//        var array: [Int] = [Int]()
-//        array.contains(<#T##element: Int##Int#>)
+        //       let a = countAndSay(5)//        removeElement(&res, 2)
+        //        var ss:[Int] = [1, 2,3]
+        //        ss.insert(<#T##newElement: Int##Int#>, at: <#T##Int#>)
+        //
+        //        let sss = plusOne([9])
         
-//        var a = [0]
-////        var m = 0
-//        var b = [1]
-//        var n = 1
-//
-//
-//        merge(&a, m, b, n)
-//        var path: String?
-//        let s = "\(a)"
-//        let curPath = (path != nil) ? (path! + s) : s
-//        path?.isEmpty
-//        let b = containsNearbyDuplicate([1,0,1,1], 1)
-
-//        var res = "dfdsffs"
-//        let resCh = res[res.index(before: <#T##String.Index#>)]
-//        let result = UInt8.max.addingReportingOverflow(1)
-//        let data:[Any?] = ["Bill", nil]
-//        print("打印结果=")
-//        let status = "shiny"
-//        for (i, j) in status.reversed().enumerated() where i % 2 == 0 {
-//            print("\(i)\(j)")
-//        }
-//        printState(getNumber() == 5)
-//        let aa = sort([3, 1, 2, 2, 4])
-//        var res = [1,2,3,4,5,6,7]
-//        rotate(&res, 3)
-//        var res = countPrimes(10)
+        //        let a = isValid("((")
+        //        let sss = addBinary("11", "1")
+        //        let sss = climbStairs(3)
+        //
+        //        var array: [Int] = [Int]()
+        //        array.contains(<#T##element: Int##Int#>)
         
-//        let val = commonChars(list)
-//            let aa = dateStr {
-//                return "\(Date())"
-//            }
-//        let val = isAnagram("dgqztusjuu", "dqugjzutsu")
-//        moveZeroes(&result)
-//        var sum = maxSubArray([-2,1,-3,4,-1,2,1,-5,4])
-//        let a = findNthDigit(11)
-//        let ss = addBinary("408", "5")
-//        let ss = countSegments("            ")
-//        var result = [Character("a"),Character("a"),Character("b"),Character("b"),Character("c"),Character("c"),Character("c")]
-//        let count = compress(&result)
-//        let ss = maxCommonDivisor(3, 5)
-//        SortUtils.quickSort(&result, startIndex: 0, endIndex: result.count - 1)
-//        Heap.buildHeap(&result)
-//        Heap.heapSort(&result);
+        //        var a = [0]
+        ////        var m = 0
+        //        var b = [1]
+        //        var n = 1
+        //
+        //
+        //        merge(&a, m, b, n)
+        //        var path: String?
+        //        let s = "\(a)"
+        //        let curPath = (path != nil) ? (path! + s) : s
+        //        path?.isEmpty
+        //        let b = containsNearbyDuplicate([1,0,1,1], 1)
+        
+        //        var res = "dfdsffs"
+        //        let resCh = res[res.index(before: <#T##String.Index#>)]
+        //        let result = UInt8.max.addingReportingOverflow(1)
+        //        let data:[Any?] = ["Bill", nil]
+        //        print("打印结果=")
+        //        let status = "shiny"
+        //        for (i, j) in status.reversed().enumerated() where i % 2 == 0 {
+        //            print("\(i)\(j)")
+        //        }
+        //        printState(getNumber() == 5)
+        //        let aa = sort([3, 1, 2, 2, 4])
+        //        var res = [1,2,3,4,5,6,7]
+        //        rotate(&res, 3)
+        //        var res = countPrimes(10)
+        
+        //        let val = commonChars(list)
+        //            let aa = dateStr {
+        //                return "\(Date())"
+        //            }
+        //        let val = isAnagram("dgqztusjuu", "dqugjzutsu")
+        //        moveZeroes(&result)
+        //        var sum = maxSubArray([-2,1,-3,4,-1,2,1,-5,4])
+        //        let a = findNthDigit(11)
+        //        let ss = addBinary("408", "5")
+        //        let ss = countSegments("            ")
+        //        var result = [Character("a"),Character("a"),Character("b"),Character("b"),Character("c"),Character("c"),Character("c")]
+        //        let count = compress(&result)
+        //        let ss = maxCommonDivisor(3, 5)
+        //        SortUtils.quickSort(&result, startIndex: 0, endIndex: result.count - 1)
+        //        Heap.buildHeap(&result)
+        //        Heap.heapSort(&result);
+        result = Helper_20190724.convertIntToList(12345)
         print("\(result)")
         print("最大差值\(maxDiff)")
+        
+//        let aa = Helper_20190724.findNearestNumber(12354)
+//        print("打印结果=\(aa)")
     }
+    
     /// 求最大公约数
     func maxCommonDivisor(_ a: Int, _ b: Int) -> Int {
         var max = 0
         var i = a
         var j = b
-        while i%j > 0 {
-           max = i%j
-           i = j
-           j = max
+        while i % j > 0 {
+            max = i % j
+            i = j
+            j = max
         }
         return j
     }
     
-    
     func compress(_ chars: inout [Character]) -> Int {
-        
         if chars.count <= 1 {
             return chars.count
         }
@@ -149,29 +149,29 @@ class ViewController: UIViewController {
                     i += 1
                     continue
                 }
-            }else{
+            } else {
                 if i == chars.count - 1 {
-                    break;
+                    break
                 }
             }
             if count > 1 {
                 let str = "\(count)"
                 var tmplist = [Character]()
                 for char in str {
-//                    chars[nextIndex] = char
-//                    nextIndex += 1
+                    //                    chars[nextIndex] = char
+                    //                    nextIndex += 1
                     tmplist.append(char)
                 }
                 if i == l - 1 {
-                   chars[nextIndex ... i] = tmplist[0 ... tmplist.count-1]
-                }else{
-                   chars[nextIndex ... i - 1] = tmplist[0 ... tmplist.count-1]
+                    chars[nextIndex ... i] = tmplist[0 ... tmplist.count - 1]
+                } else {
+                    chars[nextIndex ... i - 1] = tmplist[0 ... tmplist.count - 1]
                 }
                 
                 i = nextIndex + tmplist.count + 1
                 l = chars.count
                 nextIndex = i
-            }else{
+            } else {
                 i += 1
             }
             nextIndex = i
@@ -182,7 +182,6 @@ class ViewController: UIViewController {
     }
     
     func arrangeCoins(_ n: Int) -> Int {
-        
         if n <= 1 {
             return n
         }
@@ -192,9 +191,8 @@ class ViewController: UIViewController {
             tmp -= l
             l += 1
         }
-        return l-1
+        return l - 1
     }
-    
     
     func findAnagrams(_ s: String, _ p: String) -> [Int] {
         if s.isEmpty || p.isEmpty {
@@ -206,9 +204,9 @@ class ViewController: UIViewController {
         var dic = [Character: Int]()
         for char in p {
             if let count = dic[char] {
-              dic[char] = count + 1
-            }else{
-              dic[char] = 1
+                dic[char] = count + 1
+            } else {
+                dic[char] = 1
             }
         }
         var list = [Int]()
@@ -216,15 +214,15 @@ class ViewController: UIViewController {
         var tmp = dic
         var curStart = 0
         while i < s.count {
-//            "abacbabc"
-//            "abc"
+            //            "abacbabc"
+            //            "abc"
             let char = Character(String(s[s.index(s.startIndex, offsetBy: i)]))
             if let count = tmp[char] {
                 if count == 0 {
                     if i == curStart + p.count - 1 {
                         curStart += 1
                     }
-                }else{
+                } else {
                     tmp[char] = count - 1
                     if i == curStart + p.count - 1 {
                         list.append(curStart)
@@ -235,7 +233,7 @@ class ViewController: UIViewController {
                 }
                 
                 i += 1
-            }else{
+            } else {
                 tmp = dic
                 i += 1
                 curStart = i
@@ -243,8 +241,6 @@ class ViewController: UIViewController {
         }
         return list
     }
-    
-    
     
     func countSegments(_ s: String) -> Int {
         if s.isEmpty {
@@ -256,19 +252,30 @@ class ViewController: UIViewController {
         return array.count
     }
     
-    
     func addStrings(_ num1: String, _ num2: String) -> String {
         var a = num1
         var b = num2
+        
+        
+        
         if a.count < b.count {
             a = String(repeating: "0", count: b.count - a.count) + a
         }
+        
+        
+        
+        
         if a.count > b.count {
             b = String(repeating: "0", count: a.count - b.count) + b
         }
+        
+        
+        
         var res = ""
         var i = a.count - 1
         var addOne = 0
+        
+        
         while i >= 0 {
             let achar = Int(String(a[a.index(a.startIndex, offsetBy: i)]))!
             let bchar = Int(String(b[b.index(b.startIndex, offsetBy: i)]))!
@@ -287,7 +294,7 @@ class ViewController: UIViewController {
     }
     
     func thirdMax(_ nums: [Int]) -> Int {
-        if nums.count  == 0 {
+        if nums.count == 0 {
             return 0
         }
         if nums.count == 1 {
@@ -313,7 +320,7 @@ class ViewController: UIViewController {
             }
             return min(nums[2], min(nums[1], nums[0]))
         }
-//        [1,2,2,5,3,5]
+        //        [1,2,2,5,3,5]
         for i in 3 ..< nums.count {
             let v = nums[i]
             if v >= f {
@@ -323,21 +330,21 @@ class ViewController: UIViewController {
                 t = s
                 s = f
                 f = v
-            }else if v >= s {
+            } else if v >= s {
                 if v == s {
                     continue
                 }
                 t = s
                 s = v
-            }else if v >= t {
+            } else if v >= t {
                 t = v
-            }else {
+            } else {
                 if s == t {
                     if t == v {
                         s = v
                         t = v
-                    }else{
-                       t = v
+                    } else {
+                        t = v
                     }
                 }
             }
@@ -353,20 +360,19 @@ class ViewController: UIViewController {
     
     func fizzBuzz(_ n: Int) -> [String] {
         var list = [String]()
-        for i in 1 ..< n+1 {
-            let a = i%3
-            let b = i%5
+        for i in 1 ..< n + 1 {
+            let a = i % 3
+            let b = i % 5
             if a == 0, b == 0 {
                 list.append("FizzBuzz")
-            }else if a == 0 {
+            } else if a == 0 {
                 list.append("Fizz")
-            }else if b == 0 {
+            } else if b == 0 {
                 list.append("Buzz")
             }
         }
         return list
     }
-    
     
     func longestPalindrome(_ s: String) -> Int {
         if s.isEmpty {
@@ -377,17 +383,17 @@ class ViewController: UIViewController {
         for char in s {
             if let count = dic[char] {
                 dic[char] = count + 1
-            }else {
+            } else {
                 dic[char] = 1
             }
         }
         var hasSingle = false
         for (_, value) in dic {
-            let c = value/2
+            let c = value / 2
             if c > 0 {
-                max += 2*c
+                max += 2 * c
             }
-            if !hasSingle, value%2 != 0 {
+            if !hasSingle, value % 2 != 0 {
                 hasSingle = true
             }
         }
@@ -396,20 +402,19 @@ class ViewController: UIViewController {
         return max
     }
     
-    
     func toHex(_ num: Int) -> String {
-        //核心思想，使用位运算，每4位，对应1位16进制数字。
-        //使用0xf(00...01111b)获取num的低4位。
-        //>>算数位移，其中正数右移左边补0，负数右移左边补1。
-        //位移运算并不能保证num==0，需要使用32位int保证（对应16进制小于等于8位）。
+        // 核心思想，使用位运算，每4位，对应1位16进制数字。
+        // 使用0xf(00...01111b)获取num的低4位。
+        // >>算数位移，其中正数右移左边补0，负数右移左边补1。
+        // 位移运算并不能保证num==0，需要使用32位int保证（对应16进制小于等于8位）。
         if num == 0 {
             return "0"
         }
         let ss = "0123456789abcdef"
         var str = ""
         var val = num
-        while val != 0,  str.count < 8  {
-            let index = val & 0xf
+        while val != 0, str.count < 8 {
+            let index = val & 0xF
             str = String(ss[ss.index(ss.startIndex, offsetBy: index)]) + str
             val >>= 4
         }
@@ -417,38 +422,36 @@ class ViewController: UIViewController {
         return str
     }
     
-    //[1,9]共9个数字，组成的字符串长度为9*1长度= 9
-    //[10, 99]共90个数字，组成的字符串为90*2长度=180
-    //[100, 999]共900个数字，组成的字符串为900*3长度=2700
-    //依次类推，长度为len的数字，[pow(10, len - 1), pow(10, len)-1],一共9*pow(10, len-1)个数，
-    //组成字符串的长度为9*pow(10, len-1)*len
+    // [1,9]共9个数字，组成的字符串长度为9*1长度= 9
+    // [10, 99]共90个数字，组成的字符串为90*2长度=180
+    // [100, 999]共900个数字，组成的字符串为900*3长度=2700
+    // 依次类推，长度为len的数字，[pow(10, len - 1), pow(10, len)-1],一共9*pow(10, len-1)个数，
+    // 组成字符串的长度为9*pow(10, len-1)*len
     func findNthDigit(_ n: Int) -> Int {
         if n < 10 {
             return n
         }
         var tmp = n - 9
-        //单个数字的长度
+        // 单个数字的长度
         var len: Int = 1
         // 长度为len+1的数字所构成的字符串的长度
         var nextSize = 9 * Int(pow(Double(10), Double(len))) * (len + 1)
-        //确定n所处的数字的位数
+        // 确定n所处的数字的位数
         while tmp > nextSize {
             tmp -= nextSize
             len += 1
-            nextSize = 9 * Int(pow(Double(10), Double(len))) * (len+1)
+            nextSize = 9 * Int(pow(Double(10), Double(len))) * (len + 1)
         }
         
         len += 1
         // 确定是当前数是什么
-        let index = Int(pow(Double(10), Double(len-1)))+Int(ceil((Double(tmp) - Double(len))/Double(len)))
+        let index = Int(pow(Double(10), Double(len - 1))) + Int(ceil((Double(tmp) - Double(len)) / Double(len)))
         let str = "\(index)"
         // 确定是当前数的第几个数字
-        let charIndex = (tmp%len == 0 ? len : tmp%len) - 1
+        let charIndex = (tmp % len == 0 ? len : tmp % len) - 1
         let charStr = String(str[str.index(str.startIndex, offsetBy: charIndex)])
         return Int(charStr)!
     }
-    
-    
     
     func findTheDifference(_ s: String, _ t: String) -> Character {
         var dic = [Character: Int]()
@@ -456,7 +459,7 @@ class ViewController: UIViewController {
             let char = s[s.index(s.startIndex, offsetBy: i)]
             if let count = dic[char] {
                 dic[char] = count + 1
-            }else{
+            } else {
                 dic[char] = 1
             }
         }
@@ -469,7 +472,7 @@ class ViewController: UIViewController {
                     break
                 }
                 dic[char] = tmp - 1
-            }else{
+            } else {
                 res = char
                 break
             }
@@ -477,13 +480,12 @@ class ViewController: UIViewController {
         return res!
     }
     
-    
-    ///给定一个字符串，找到它的第一个不重复的字符，并返回它的索引。如果不存在，则返回 -1。
+    /// 给定一个字符串，找到它的第一个不重复的字符，并返回它的索引。如果不存在，则返回 -1。
     func firstUniqChar(_ s: String) -> Int {
         if s.isEmpty {
             return -1
         }
-//        var dic = [Character: (Int, Int)]()
+        //        var dic = [Character: (Int, Int)]()
         
         var cDic = [Character: Int]()
         var cDicIndex = [Character: Int]()
@@ -493,7 +495,7 @@ class ViewController: UIViewController {
             if let tmp = cDic[char] {
                 cDic[char] = tmp + 1
                 cDicIndex.removeValue(forKey: char)
-            }else{
+            } else {
                 cDic[char] = 1
                 cDicIndex[char] = i
             }
@@ -504,56 +506,56 @@ class ViewController: UIViewController {
         var list = Array(cDicIndex.values)
         list = list.sorted(by: <)
         return list[0]
-//
-//
-//        for i in 0 ..< s.count {
-//            let char = s[s.index(s.startIndex, offsetBy: i)]
-//            if let tmp = dic[char] {
-//                dic[char] = (tmp.0 + 1, tmp.1)
-//            }else{
-//                dic[char] = (1, i)
-//            }
-//        }
-//        var res = -1
-//        for tuple in dic.values {
-//            if tuple.0 != 1 {
-//                continue
-//            }
-//            if res == -1 {
-//                res = tuple.1
-//            }else{
-//                res = min(tuple.1, res)
-//            }
-//        }
-//        return res
+        //
+        //
+        //        for i in 0 ..< s.count {
+        //            let char = s[s.index(s.startIndex, offsetBy: i)]
+        //            if let tmp = dic[char] {
+        //                dic[char] = (tmp.0 + 1, tmp.1)
+        //            }else{
+        //                dic[char] = (1, i)
+        //            }
+        //        }
+        //        var res = -1
+        //        for tuple in dic.values {
+        //            if tuple.0 != 1 {
+        //                continue
+        //            }
+        //            if res == -1 {
+        //                res = tuple.1
+        //            }else{
+        //                res = min(tuple.1, res)
+        //            }
+        //        }
+        //        return res
     }
     
-    ///给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
+    /// 给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
     func maxSubArray(_ nums: [Int]) -> Int {
-        //连续
+        // 连续
         if nums.count == 0 {
             return 0
         }
         if nums.count == 1 {
             return nums[0]
         }
-        //res代表已经遍历过的连续子数组中最大的和
+        // res代表已经遍历过的连续子数组中最大的和
         var res = nums[0]
         var sum = 0
-//        [-2,1,-3,4,-1,2,1,-5,4]
+        //        [-2,1,-3,4,-1,2,1,-5,4]
         for val in nums {
             if sum > 0 {
                 sum += val
-            }else{
+            } else {
                 sum = val
             }
             res = max(sum, res)
         }
         return res
-//        if nums.count == 0 {
-//            return 0
-//        }
-//        return maxSubArrayHelper(nums: nums, index: nums.count - 1)
+        //        if nums.count == 0 {
+        //            return 0
+        //        }
+        //        return maxSubArrayHelper(nums: nums, index: nums.count - 1)
     }
     
     func maxSubArrayHelper(nums: [Int], index: Int) -> Int {
@@ -563,11 +565,10 @@ class ViewController: UIViewController {
         if index == 1 {
             return max(nums[1], nums[0])
         }
-        let tmp = maxSubArrayHelper(nums: nums, index: index - 1);
+        let tmp = maxSubArrayHelper(nums: nums, index: index - 1)
         let tmp2 = maxSubArrayHelper(nums: nums, index: index - 1) + nums[index]
         return max(tmp, tmp2)
     }
-    
     
     func canConstruct(_ ransomNote: String, _ magazine: String) -> Bool {
         if ransomNote.isEmpty, magazine.isEmpty {
@@ -581,7 +582,7 @@ class ViewController: UIViewController {
         for char in magazine {
             if let count = dic[char] {
                 dic[char] = count + 1
-            }else{
+            } else {
                 dic[char] = 1
             }
         }
@@ -595,10 +596,7 @@ class ViewController: UIViewController {
         return true
     }
     
-    
     func intersection(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
-        
-        
         if nums1.isEmpty, nums2.isEmpty {
             return [Int]()
         }
@@ -606,7 +604,6 @@ class ViewController: UIViewController {
         if nums1.isEmpty || nums2.isEmpty {
             return [Int]()
         }
-        
         
         var dic = [Int: Int]()
         
@@ -626,7 +623,6 @@ class ViewController: UIViewController {
     }
     
     func wordPattern(_ pattern: String, _ str: String) -> Bool {
-        
         var dic = [Character: String]()
         var scharDic = [String: Character]()
         let array = str.components(separatedBy: " ")
@@ -639,10 +635,10 @@ class ViewController: UIViewController {
             let char = pattern[pattern.index(pattern.startIndex, offsetBy: i)]
             
             if let s = dic[char] {
-                if s !=  array[i] {
+                if s != array[i] {
                     return false
                 }
-            }else{
+            } else {
                 dic[char] = array[i]
             }
             
@@ -650,13 +646,12 @@ class ViewController: UIViewController {
                 if char != cha {
                     return false
                 }
-            }else{
+            } else {
                 scharDic[array[i]] = char
             }
         }
         return true
     }
-    
     
     func moveZeroes(_ nums: inout [Int]) {
         if nums.count < 2 {
@@ -670,27 +665,25 @@ class ViewController: UIViewController {
                 }
                 continue
             }
-            //为0的时候
+            // 为0的时候
             if i == nums.count - 1 {
-                //最后一个数为0不做处理
+                // 最后一个数为0不做处理
                 continue
             }
-            if nums[i] == nums[i+1] {
-                //该元素后面的元素为0不做处理
+            if nums[i] == nums[i + 1] {
+                // 该元素后面的元素为0不做处理
                 continue
             }
             var s = i
             while s < notZeroIndex {
-                (nums[s], nums[s+1]) = (nums[s+1], nums[s])
+                (nums[s], nums[s + 1]) = (nums[s + 1], nums[s])
                 s += 1
             }
             notZeroIndex -= 1
         }
     }
     
-    
     func missingNumber(_ nums: [Int]) -> Int {
-        
         if nums.count == 0 {
             return 0
         }
@@ -709,22 +702,20 @@ class ViewController: UIViewController {
             }
         }
         
-        
         var n = nums.count
-        if !nums.contains(n){
+        if !nums.contains(n) {
             return n
         }
         while n >= 0 {
             n -= 1
-            if !nums.contains(n){
+            if !nums.contains(n) {
                 return n
             }
         }
         return 0
     }
-
+    
     func isUgly(_ num: Int) -> Bool {
-        
         if 0 == num {
             return false
         }
@@ -747,11 +738,10 @@ class ViewController: UIViewController {
     }
     
     func isAnagramHelper(_ s: String, _ t: String) {
-        
         if s.isEmpty || s.count == 1 {
             return
         }
-        let mid = s.index(s.startIndex, offsetBy: s.count/2)
+        let mid = s.index(s.startIndex, offsetBy: s.count / 2)
         
         let sleft = String(s[s.startIndex ..< mid])
         let sright = String(s[mid ..< s.endIndex])
@@ -759,7 +749,7 @@ class ViewController: UIViewController {
             sDic[sleft.first!] = (sDic[sleft.first!] ?? 0) + 1
         }
         if sright.count == 1 {
-           sDic[sright.first!] = (sDic[sright.first!] ?? 0) + 1
+            sDic[sright.first!] = (sDic[sright.first!] ?? 0) + 1
         }
         
         let tleft = String(t[t.startIndex ..< mid])
@@ -773,7 +763,6 @@ class ViewController: UIViewController {
         isAnagramHelper(sleft, tleft)
         isAnagramHelper(sright, tright)
     }
-    
     
     func isAnagram(_ s: String, _ t: String) -> Bool {
         /**
@@ -796,28 +785,28 @@ class ViewController: UIViewController {
             return false
         }
         
-//        var dics = [Character: Int]()
-//        var dict = [Character: Int]()
+        //        var dics = [Character: Int]()
+        //        var dict = [Character: Int]()
         
-//        var left = 0
-//        var right = s.count - 1
-//        while left <= right {
-//            var schar = s[s.index(s.startIndex, offsetBy: left)]
-//            var tchar = t[t.index(t.startIndex, offsetBy: left)]
-//            dics[schar] = (dics[schar] ?? 0) + 1
-//            dict[tchar] = (dict[tchar] ?? 0) + 1
-//
-//            if left == right {
-//                break
-//            }
-//            schar = s[s.index(s.startIndex, offsetBy: right)]
-//            tchar = t[t.index(t.startIndex, offsetBy: right)]
-//            dics[schar] = (dics[schar] ?? 0) + 1
-//            dict[tchar] = (dict[tchar] ?? 0) + 1
-//            left += 1
-//            right -= 1
-//        }
-
+        //        var left = 0
+        //        var right = s.count - 1
+        //        while left <= right {
+        //            var schar = s[s.index(s.startIndex, offsetBy: left)]
+        //            var tchar = t[t.index(t.startIndex, offsetBy: left)]
+        //            dics[schar] = (dics[schar] ?? 0) + 1
+        //            dict[tchar] = (dict[tchar] ?? 0) + 1
+        //
+        //            if left == right {
+        //                break
+        //            }
+        //            schar = s[s.index(s.startIndex, offsetBy: right)]
+        //            tchar = t[t.index(t.startIndex, offsetBy: right)]
+        //            dics[schar] = (dics[schar] ?? 0) + 1
+        //            dict[tchar] = (dict[tchar] ?? 0) + 1
+        //            left += 1
+        //            right -= 1
+        //        }
+        
         isAnagramHelper(s, t)
         for (key, value) in sDic {
             guard let val = tDic[key], val == value else {
@@ -827,11 +816,6 @@ class ViewController: UIViewController {
         return true
     }
     
-    
-    
-    
-    
-    
     func isPowerOfTwo(_ n: Int) -> Bool {
         if n == 0 {
             return false
@@ -839,18 +823,17 @@ class ViewController: UIViewController {
         var val = n
         var i = 15
         
-        if val%Int(pow(Double(2), Double(15))) == 0 {
-            val = val/Int(pow(Double(2), Double(15)))
+        if val % Int(pow(Double(2), Double(15))) == 0 {
+            val = val / Int(pow(Double(2), Double(15)))
         }
-        while i > 0{
+        while i > 0 {
             if val % Int(pow(Double(2), Double(i - 1))) == 0 {
-                val = val/Int(pow(Double(2), Double(i - 1)))
+                val = val / Int(pow(Double(2), Double(i - 1)))
             }
             i -= 1
         }
         return (val == 1)
     }
-    
     
     func isIsomorphic(_ s: String, _ t: String) -> Bool {
         if s.count != t.count {
@@ -872,7 +855,7 @@ class ViewController: UIViewController {
                 if val != lchart {
                     return false
                 }
-            }else{
+            } else {
                 if dic.values.contains(lchart) {
                     return false
                 }
@@ -883,7 +866,7 @@ class ViewController: UIViewController {
                 if val != rchart {
                     return false
                 }
-            }else{
+            } else {
                 if dic.values.contains(rchart) {
                     return false
                 }
@@ -898,37 +881,35 @@ class ViewController: UIViewController {
             if val != lchart {
                 return false
             }
-        }else{
+        } else {
             if dic.values.contains(lchart) {
                 return false
             }
             dic.updateValue(lchart, forKey: lchars)
         }
         
-        
-//        for i in 0 ..< s.count {
-//            let chars = s[s.index(s.startIndex, offsetBy: i)]
-//            let chart = t[t.index(t.startIndex, offsetBy: i)]
-//
-//            if let val = dic[chars] {
-//                if val != chart {
-//                    return false
-//                }
-//            }else{
-//                if dic.values.contains(chart) {
-//                    return false
-//                }
-//                dic.updateValue(chart, forKey: chars)
-//            }
-//        }
+        //        for i in 0 ..< s.count {
+        //            let chars = s[s.index(s.startIndex, offsetBy: i)]
+        //            let chart = t[t.index(t.startIndex, offsetBy: i)]
+        //
+        //            if let val = dic[chars] {
+        //                if val != chart {
+        //                    return false
+        //                }
+        //            }else{
+        //                if dic.values.contains(chart) {
+        //                    return false
+        //                }
+        //                dic.updateValue(chart, forKey: chars)
+        //            }
+        //        }
         return true
     }
     
-    
-//
-//    func dateStr(closure: () -> String) -> String{
-//        return closure()
-//    }
+    //
+    //    func dateStr(closure: () -> String) -> String{
+    //        return closure()
+    //    }
     
     func commonChars(_ A: [String]) -> [String] {
         if A.isEmpty {
@@ -942,7 +923,7 @@ class ViewController: UIViewController {
                 if s.count < tmp.count {
                     minLenghtStr = s
                 }
-            }else{
+            } else {
                 minLenghtStr = s
             }
             list.append(s)
@@ -950,7 +931,6 @@ class ViewController: UIViewController {
         commonCharsHelp(&list, minLenghtStr!)
         return self.list
     }
-
     
     func commonCharsHelp(_ list: inout [String], _ minStr: String) {
         let minStrFirstChar = minStr.first!
@@ -968,13 +948,13 @@ class ViewController: UIViewController {
                 list[i] = str
                 continue
             }
-            str = str.filter{$0 >= minStrFirstChar && $0 <= minStrLastChar}
+            str = str.filter { $0 >= minStrFirstChar && $0 <= minStrLastChar }
             if str.isEmpty {
                 return
             }
             if str.first! != minStrFirstChar {
                 firstCharSame = false
-            }else{
+            } else {
                 let left = str.index(str.startIndex, offsetBy: 1)
                 str = String(str[left ..< str.endIndex])
                 if str.count < tmpStr.count {
@@ -992,14 +972,11 @@ class ViewController: UIViewController {
         commonCharsHelp(&list, tmpStr)
     }
     
-    
-    
     func largestSumAfterKNegations(_ A: [Int], _ K: Int) -> Int {
-        
         if A.isEmpty {
             return 0
         }
-        //先用快排，进行排序
+        // 先用快排，进行排序
         var list = quickSort(A)
         if list.count == 1 {
             if K % 2 != 0 {
@@ -1037,16 +1014,16 @@ class ViewController: UIViewController {
                     }
                     count = 0
                 }
-            }else if list[i] == 0 {
+            } else if list[i] == 0 {
                 count = 0
-            }else if list[i] > 0 {
+            } else if list[i] > 0 {
                 if list[minIndex] <= list[i] {
                     if count % 2 != 0 {
                         sum -= list[minIndex]
                         list[minIndex] = -list[minIndex]
                         sum += list[minIndex]
                     }
-                }else{
+                } else {
                     if count % 2 != 0 {
                         list[i] = -list[i]
                     }
@@ -1059,12 +1036,11 @@ class ViewController: UIViewController {
     }
     
     func quickSort(_ list: [Int]) -> [Int] {
-        
         if list.count <= 1 {
             return list
         }
         
-        let midVal = list[list.count/2]
+        let midVal = list[list.count / 2]
         var left = [Int]()
         var mid = [Int]()
         var right = [Int]()
@@ -1072,9 +1048,9 @@ class ViewController: UIViewController {
         for i in 0 ..< list.count {
             if list[i] < midVal {
                 left.append(list[i])
-            }else if list[i] > midVal {
+            } else if list[i] > midVal {
                 right.append(list[i])
-            }else{
+            } else {
                 mid.append(list[i])
             }
         }
@@ -1089,17 +1065,15 @@ class ViewController: UIViewController {
         var index = 0
         var res = 0
         while val != 0 {
-            let n = (val%2) == 1 ? 0 : 1
-            res = res + n*Int(pow(Double(2), Double(index)))
-            val = val/2
+            let n = (val % 2) == 1 ? 0 : 1
+            res = res + n * Int(pow(Double(2), Double(index)))
+            val = val / 2
             index += 1
         }
         return res
     }
     
-    
     func numPairsDivisibleBy60(_ time: [Int]) -> Int {
-        
         if time.count < 2 {
             return 0
         }
@@ -1107,23 +1081,21 @@ class ViewController: UIViewController {
         var count = 0
         
         for i in 0 ..< time.count {
-             let val = time[i]%60;
-             var cn = 0
-             if val == 0 {
+            let val = time[i] % 60
+            var cn = 0
+            if val == 0 {
                 cn = dic[0] ?? 0
-             }else{
+            } else {
                 cn = dic[60 - val] ?? 0
-             }
-             count += cn
-             dic[val] = (dic[val] ?? 0) + 1
+            }
+            count += cn
+            dic[val] = (dic[val] ?? 0) + 1
         }
         
         return count
     }
     
-    
     func handler(_ A: inout [Int]) -> Int {
-        
         if A.count == 0 {
             return 0
         }
@@ -1131,32 +1103,33 @@ class ViewController: UIViewController {
         for i in 0 ..< A.count {
             for j in i ..< A.count {
                 let val = A[i] + A[j] + j - i
-                if i==0, j==0 {
+                if i == 0, j == 0 {
                     maxVal = val
-                }else{
+                } else {
                     maxVal = max(val, maxVal)
                 }
             }
         }
         return maxVal
     }
+    
     func countPrimes(_ n: Int) -> Int {
         if n < 3 {
             return 0
         }
         // 首先生成了一个全部为1的列表
         var list = Array(repeating: 1, count: n)
-        //因为0和1都不是质数，所以列表的前两个位置赋值为0
+        // 因为0和1都不是质数，所以列表的前两个位置赋值为0
         list[0] = 0
         list[1] = 0
-        //此时从index=2开始，[2] = 1即表明第一个质数为2，然后将2的倍数对应的
-        //索引全部赋值为0.此时list[3]=1即表明下一个质数为3，同样划去3的倍数。以此类推
+        // 此时从index=2开始，[2] = 1即表明第一个质数为2，然后将2的倍数对应的
+        // 索引全部赋值为0.此时list[3]=1即表明下一个质数为3，同样划去3的倍数。以此类推
         _ = Int(sqrt(Double(n))) + 1
         for i in 2 ..< n {
-            if  list[i] != 1 {
+            if list[i] != 1 {
                 continue
             }
-            for j in i+1 ..< list.count {
+            for j in i + 1 ..< list.count {
                 if j % i == 0 {
                     list[j] = 0
                 }
@@ -1170,7 +1143,6 @@ class ViewController: UIViewController {
         return count
     }
     
-    
     func rotate(_ nums: inout [Int], _ k: Int) {
         if nums.count == 0 {
             return
@@ -1182,13 +1154,12 @@ class ViewController: UIViewController {
         while i > 0 {
             let tmp = nums.last!
             for j in (1 ..< nums.count).reversed() {
-                nums[j] = nums[j-1]
+                nums[j] = nums[j - 1]
             }
             nums[0] = tmp
             i -= 1
         }
     }
-    
     
     func trailingZeroes(_ n: Int) -> Int {
         if n == 0 {
@@ -1200,7 +1171,7 @@ class ViewController: UIViewController {
         var res = 1
         var count = 0
         for i in 1 ..< n + 1 {
-            res  = res * i
+            res = res * i
             if res % 10 == 0 {
                 res = 1
                 count += 1
@@ -1208,7 +1179,6 @@ class ViewController: UIViewController {
         }
         return count
     }
-    
     
     func titleToNumber(_ s: String) -> Int {
         if s.isEmpty {
@@ -1223,32 +1193,29 @@ class ViewController: UIViewController {
             rate *= 26
         }
         
-        
-//        for char in s  {
-//            res = res*26 + Int(char.unicodeScalars.first!.value) - AVal + 1
-//            print("aaa=\(res)")
-//        }
+        //        for char in s  {
+        //            res = res*26 + Int(char.unicodeScalars.first!.value) - AVal + 1
+        //            print("aaa=\(res)")
+        //        }
         return res
     }
-    
     
     func singleNumber(_ nums: [Int]) -> Int {
         var a = 0
         for num in nums {
-            a = a^num
+            a = a ^ num
         }
         return a
     }
     
     func isPalindrome(_ s: String) -> Bool {
-        
         if s.isEmpty {
             return true
         }
         let str = s.filter {
             let val = (($0 >= "0") && ($0 <= "9")) || ($0 >= Character("a") && $0 <= Character("z")) || ($0 >= Character("A") && $0 <= Character("Z"))
             return val
-            }.uppercased()
+        }.uppercased()
         let des = String(str.reversed())
         for i in 0 ..< des.count {
             let a = String(str[str.index(str.startIndex, offsetBy: i)])
@@ -1271,7 +1238,7 @@ class ViewController: UIViewController {
                 array.append([1, 1])
                 continue
             }
-            array.append(helper(array[i-1]))
+            array.append(helper(array[i - 1]))
         }
         return array
     }
@@ -1289,7 +1256,6 @@ class ViewController: UIViewController {
     }
     
     func majorityElement(_ nums: [Int]) -> Int {
-        
         if nums.count == 0 {
             return 0
         }
@@ -1304,37 +1270,32 @@ class ViewController: UIViewController {
             if count == 0 {
                 curValue = nums[i]
             }
-            if (nums[i] == curValue) {
+            if nums[i] == curValue {
                 count += 1
-            }else{
+            } else {
                 count -= 1
             }
-            if count > nums.count/2 {
+            if count > nums.count / 2 {
                 break
             }
         }
         return curValue
     }
     
-    
-    
-    
     func twoSum(_ numbers: [Int], _ target: Int) -> [Int] {
-        
         var left = 0
         var right = numbers.count - 1
         while left < right {
             if numbers[left] + numbers[right] == target {
                 break
-            }else if numbers[left] + numbers[right] > target {
+            } else if numbers[left] + numbers[right] > target {
                 right -= 1
-            }else{
+            } else {
                 left += 1
             }
         }
         return [left, right]
     }
-    
     
     func convertToTitle(_ n: Int) -> String {
         if n <= 0 {
@@ -1345,15 +1306,12 @@ class ViewController: UIViewController {
         let a = Int("A".unicodeScalars.first!.value)
         while i > 0 {
             i -= 1
-            let char = UnicodeScalar(a + i%26)!
+            let char = UnicodeScalar(a + i % 26)!
             str = String(char) + str
-            i = i/26
+            i = i / 26
         }
         return str
     }
-    
-    
-    
     
     func maxValHelper(_ list: [Int]) -> Int {
         if list.count == 0 {
@@ -1373,7 +1331,6 @@ class ViewController: UIViewController {
         return maxVal
     }
     
-    
     func sort(_ nums: [Int]) -> [Int] {
         if nums.count <= 1 {
             return nums
@@ -1385,13 +1342,13 @@ class ViewController: UIViewController {
         
         var add = false
         for j in 1 ..< result.count {
-            if result [j] == result[i] {
+            if result[j] == result[i] {
                 array2.append(result[j])
                 add = true
-            }else{
+            } else {
                 if add {
                     array2.append(result[i])
-                }else{
+                } else {
                     array1.append(result[i])
                 }
                 add = false
@@ -1401,19 +1358,18 @@ class ViewController: UIViewController {
         return array1 + array2
     }
     
-    
     func containsNearbyDuplicate(_ nums: [Int], _ k: Int) -> Bool {
         if nums.count == 0 || k == 0 {
             return false
         }
         var set = Set<Int>()
-        //哈希+滑动窗口
+        // 哈希+滑动窗口
         for i in 0 ..< nums.count {
             if set.contains(nums[i]) {
                 return true
             }
             set.insert(nums[i])
-            if set.count == k + 1{
+            if set.count == k + 1 {
                 set.remove(at: set.startIndex)
             }
         }
@@ -1429,7 +1385,6 @@ class ViewController: UIViewController {
     }
     
     func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
-        
         if m == 0 {
             nums1 = nums2
             return
@@ -1438,14 +1393,14 @@ class ViewController: UIViewController {
         if nums2.count == 0 {
             return
         }
-
+        
         var i = m - 1
         var j = 0
         var isInset = false
         while j < n {
             if nums2[j] < nums1[i] {
                 nums1[i + 1] = nums1[i]
-                nums1[i] =  nums2[j]
+                nums1[i] = nums2[j]
                 isInset = true
                 i -= 1
                 if i < 0 {
@@ -1453,22 +1408,20 @@ class ViewController: UIViewController {
                     j += 1
                     isInset = false
                 }
-            }else{
+            } else {
                 if isInset {
                     isInset = false
                     continue
-                }else{
-                   nums1[i+1] = nums2[j]
+                } else {
+                    nums1[i + 1] = nums2[j]
                 }
                 i = m + j
                 j += 1
             }
         }
-        
     }
     
     func climbStairs(_ n: Int) -> Int {
-        
         if n == 1 {
             return 1
         }
@@ -1476,11 +1429,10 @@ class ViewController: UIViewController {
             return 2
         }
         if dic[n - 1] == nil {
-            dic[n - 1] = climbStairs(n-2) + climbStairs(n-3)
+            dic[n - 1] = climbStairs(n - 2) + climbStairs(n - 3)
         }
-        dic[n] = dic[n-1]! + dic[n-2]!
-        return  dic[n]!
-        
+        dic[n] = dic[n - 1]! + dic[n - 2]!
+        return dic[n]!
     }
     
     func mySqrt(_ x: Int) -> Int {
@@ -1489,19 +1441,17 @@ class ViewController: UIViewController {
         }
         let m: Double = Double(x)
         var k: Double = 1
-        while(abs(k - m/k) > 0.000001) {
-            k = (k + m/k)/2
+        while abs(k - m / k) > 0.000001 {
+            k = (k + m / k) / 2
         }
         return Int(k)
     }
     
-    
     func addBinary(_ a: String, _ b: String) -> String {
-        
         var res = ""
         var j = 0
         
-        //方法1
+        // 方法1
         var ta = a
         var tb = b
         
@@ -1509,7 +1459,7 @@ class ViewController: UIViewController {
             for _ in 0 ..< abs(ta.count - tb.count) {
                 ta = "0" + ta
             }
-        }else if tb.count < ta.count {
+        } else if tb.count < ta.count {
             for _ in 0 ..< abs(ta.count - tb.count) {
                 tb = "0" + tb
             }
@@ -1521,11 +1471,11 @@ class ViewController: UIViewController {
             if achar == bchar {
                 if j == 1 {
                     res = "1" + res
-                }else{
+                } else {
                     res = "0" + res
                 }
                 j = achar == "1" ? 1 : 0
-            }else{
+            } else {
                 res = ((j == 1) ? "0" : "1") + res
             }
         }
@@ -1535,65 +1485,63 @@ class ViewController: UIViewController {
         }
         return res
         
-//
-//
-//
-//
-//        for i in 0 ..< min(a.count, b.count) {
-//            let achar = a[a.index(a.startIndex, offsetBy: a.count - 1 - i)]
-//            let bchar = b[b.index(b.startIndex, offsetBy: b.count - 1 - i)]
-//            if achar == bchar {
-//                if j == 1 {
-//                    res = "1" + res
-//                }else{
-//                    res = "0" + res
-//                }
-//                j = achar == "1" ? 1 : 0
-//            }else{
-//                res = ((j == 1) ? "0" : "1") + res
-//            }
-//        }
-//
-//        if a.count == b.count && j == 1 {
-//            res = "1" + res
-//            return res
-//        }
-//
-//
-//        let tmp = a.count > b.count ? a : b
-//        let count = abs(a.count - b.count)
-//        for i in 0 ..< abs(a.count - b.count) {
-//            let achar = tmp[tmp.index(tmp.startIndex, offsetBy: count - 1 - i)]
-//            if String(achar) == "1" {
-//                if j == 1 {
-//                    res = "0" + res
-//                }else{
-//                    res = "1" + res
-//                }
-//            }else{
-//                if j == 1 {
-//                    res = "1" + res
-//                }else{
-//                    res = "0" + res
-//                }
-//                j = 0
-//            }
-//        }
-//        if j == 1 {
-//            res = "1" + res
-//        }
-//
-//        return res
+        //
+        //
+        //
+        //
+        //        for i in 0 ..< min(a.count, b.count) {
+        //            let achar = a[a.index(a.startIndex, offsetBy: a.count - 1 - i)]
+        //            let bchar = b[b.index(b.startIndex, offsetBy: b.count - 1 - i)]
+        //            if achar == bchar {
+        //                if j == 1 {
+        //                    res = "1" + res
+        //                }else{
+        //                    res = "0" + res
+        //                }
+        //                j = achar == "1" ? 1 : 0
+        //            }else{
+        //                res = ((j == 1) ? "0" : "1") + res
+        //            }
+        //        }
+        //
+        //        if a.count == b.count && j == 1 {
+        //            res = "1" + res
+        //            return res
+        //        }
+        //
+        //
+        //        let tmp = a.count > b.count ? a : b
+        //        let count = abs(a.count - b.count)
+        //        for i in 0 ..< abs(a.count - b.count) {
+        //            let achar = tmp[tmp.index(tmp.startIndex, offsetBy: count - 1 - i)]
+        //            if String(achar) == "1" {
+        //                if j == 1 {
+        //                    res = "0" + res
+        //                }else{
+        //                    res = "1" + res
+        //                }
+        //            }else{
+        //                if j == 1 {
+        //                    res = "1" + res
+        //                }else{
+        //                    res = "0" + res
+        //                }
+        //                j = 0
+        //            }
+        //        }
+        //        if j == 1 {
+        //            res = "1" + res
+        //        }
+        //
+        //        return res
     }
     
-    
     func plusOne(_ digits: [Int]) -> [Int] {
-        
         if digits.count == 0 {
             return [Int]()
         }
         var i = 1
-        var res:[Int] = [Int]()
+        var res: [Int] = [Int]()
         
         for j in (0 ..< digits.count).reversed() {
             var tmp = digits[j] + i
@@ -1603,9 +1551,9 @@ class ViewController: UIViewController {
                 tmp = 0
                 res.insert(tmp, at: 0)
                 if j == 0 {
-                     res.insert(1, at: 0)
+                    res.insert(1, at: 0)
                 }
-            }else {
+            } else {
                 i = 0
                 res.insert(tmp, at: 0)
             }
@@ -1626,7 +1574,7 @@ class ViewController: UIViewController {
                 let char = res[res.index(res.startIndex, offsetBy: j)]
                 if curChar == char {
                     count += 1
-                }else{
+                } else {
                     curRes += "\(count)\(curChar)"
                     curChar = char
                     count = 1
@@ -1641,42 +1589,40 @@ class ViewController: UIViewController {
         return res
     }
     
-//
-//    func searchInsert(_ nums: [Int], _ target: Int) -> Int {
-//
-//        var low = 0
-//        var hight = nums.count
-//        var mid = 0
-//        if target <= nums[0] {
-//            return 0
-//        }
-//        while low < hight {
-//            mid = (hight - low)/2 + low
-//            if nums[mid] == target {
-//                return mid
-//            }
-//            if nums[mid] > target {
-//                hight = mid - 1
-//            }else{
-//                low = mid + 1
-//            }
-//        }
-//        return low+1
-//    }
+    //
+    //    func searchInsert(_ nums: [Int], _ target: Int) -> Int {
+    //
+    //        var low = 0
+    //        var hight = nums.count
+    //        var mid = 0
+    //        if target <= nums[0] {
+    //            return 0
+    //        }
+    //        while low < hight {
+    //            mid = (hight - low)/2 + low
+    //            if nums[mid] == target {
+    //                return mid
+    //            }
+    //            if nums[mid] > target {
+    //                hight = mid - 1
+    //            }else{
+    //                low = mid + 1
+    //            }
+    //        }
+    //        return low+1
+    //    }
     
     func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
-        
         if nums.count == 0 {
             return 0
         }
         let _: String = ""
         
-        
-//        var res = [0,1,2,2,3,0,4,2]
+        //        var res = [0,1,2,2,3,0,4,2]
         var i = 0
         
         for j in 0 ..< nums.count {
-            if (nums[j] != val){
+            if nums[j] != val {
                 nums[i] = nums[j]
                 i += 1
             }
@@ -1685,10 +1631,7 @@ class ViewController: UIViewController {
         return i
     }
     
-    
-    
     func removeDuplicates(_ nums: inout [Int]) -> Int {
-        
         if nums.count == 0 {
             return 0
         }
@@ -1699,10 +1642,8 @@ class ViewController: UIViewController {
                 nums[i] = nums[j]
             }
         }
-       return i + 1;
+        return i + 1
     }
-    
-    
     
     func isValid(_ s: String) -> Bool {
         if s == "" {
@@ -1719,21 +1660,17 @@ class ViewController: UIViewController {
             
             if ch == array.last {
                 array.removeLast()
-            }else{
+            } else {
                 return false
             }
         }
         return true
     }
     
-
     func longestCommonPrefix(_ strs: [String]) -> String {
-        
         if strs.count == 0 {
             return ""
         }
-        
-       
         
         if strs.count == 1 {
             return strs[0]
@@ -1746,7 +1683,7 @@ class ViewController: UIViewController {
                 let b = tmp[tmp.index(tmp.startIndex, offsetBy: j)]
                 if a == b {
                     res += String(a)
-                }else{
+                } else {
                     if res == "" {
                         return ""
                     }
@@ -1758,12 +1695,7 @@ class ViewController: UIViewController {
         return tmp
     }
     
-    
-    
-    
-    
     func isPalindrome(_ x: Int) -> Bool {
-        
         if x < 0 {
             return false
         }
@@ -1776,7 +1708,7 @@ class ViewController: UIViewController {
         var i = 0
         var j = str.count - 1
         
-        while i<j {
+        while i < j {
             let start = str[str.index(str.startIndex, offsetBy: i)]
             let end = str[str.index(str.startIndex, offsetBy: j)]
             
@@ -1789,9 +1721,8 @@ class ViewController: UIViewController {
         return true
     }
     
-    
     func reverse(_ x: Int) -> Int {
-        let str = String(("\(abs(x))").reversed())
+        let str = String("\(abs(x))".reversed())
         if x >= 0 {
             return Int(Int32(str) ?? 0)
         }
@@ -1799,16 +1730,15 @@ class ViewController: UIViewController {
     }
     
     func romanToInt(_ s: String) -> Int {
-        let dic:[String : Int] = ["I" : 1, "V" : 5, "X" : 10, "L" : 50, "C" : 100, "D" : 500, "M" : 1000]
+        let dic: [String: Int] = ["I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000]
         var res: Int = 0
         var i = 0
         var nextVal: Int = 0
         while i < s.count {
-            
-            if i == s.count -  1{
+            if i == s.count - 1 {
                 if nextVal != 0 {
                     res += nextVal
-                }else{
+                } else {
                     let cur = String(s[s.index(s.startIndex, offsetBy: i)])
                     res += dic[cur]!
                 }
@@ -1820,7 +1750,7 @@ class ViewController: UIViewController {
                 let cur = String(s[s.index(s.startIndex, offsetBy: i)])
                 curVal = dic[cur]!
             }
-            let next = String(s[s.index(s.startIndex, offsetBy: i+1)])
+            let next = String(s[s.index(s.startIndex, offsetBy: i + 1)])
             nextVal = dic[next]!
             if curVal < nextVal {
                 res += nextVal - curVal
@@ -1835,66 +1765,60 @@ class ViewController: UIViewController {
         return res
     }
     
-    
-//    func romanToInt(_ s: String) -> Int {
-//
-//        var dic:[String : Int] = ["I" : 1, "V" : 5, "X" : 10, "L" : 50, "C" : 100, "D" : 500, "M" : 1000]
-//        var res: Int = 0
-//        var i = 0
-//        while i < s.count {
-//            let cur = String(s[s.index(s.startIndex, offsetBy: i)])
-//            if i == s.count - 1{
-//                res += dic[cur]!
-//                break
-//            }
-//            let next = String(s[s.index(s.startIndex, offsetBy: i+1)])
-//            if dic[cur] == 1 , dic[next] == 5 {
-//                res += 4
-//                i += 2
-//                continue
-//            }
-//            if dic[cur] == 1 , dic[next] == 10 {
-//                res += 9
-//                i += 2
-//                continue
-//            }
-//            if dic[cur] == 10 , dic[next] == 50{
-//                res += 40
-//                i += 2
-//                continue
-//            }
-//            if dic[cur] == 10 , dic[next] == 100{
-//                res += 90
-//                i += 2
-//                continue
-//            }
-//            if dic[cur] == 100 , dic[next] == 500{
-//                res += 400
-//                i += 2
-//                continue
-//            }
-//            if dic[cur] == 100 , dic[next] == 1000{
-//                res += 900
-//                i += 2
-//                continue
-//            }
-//            i += 1
-//            res += dic[cur]!
-//        }
-//
-//        return res
-//    }
-    
-    
+    //    func romanToInt(_ s: String) -> Int {
+    //
+    //        var dic:[String : Int] = ["I" : 1, "V" : 5, "X" : 10, "L" : 50, "C" : 100, "D" : 500, "M" : 1000]
+    //        var res: Int = 0
+    //        var i = 0
+    //        while i < s.count {
+    //            let cur = String(s[s.index(s.startIndex, offsetBy: i)])
+    //            if i == s.count - 1{
+    //                res += dic[cur]!
+    //                break
+    //            }
+    //            let next = String(s[s.index(s.startIndex, offsetBy: i+1)])
+    //            if dic[cur] == 1 , dic[next] == 5 {
+    //                res += 4
+    //                i += 2
+    //                continue
+    //            }
+    //            if dic[cur] == 1 , dic[next] == 10 {
+    //                res += 9
+    //                i += 2
+    //                continue
+    //            }
+    //            if dic[cur] == 10 , dic[next] == 50{
+    //                res += 40
+    //                i += 2
+    //                continue
+    //            }
+    //            if dic[cur] == 10 , dic[next] == 100{
+    //                res += 90
+    //                i += 2
+    //                continue
+    //            }
+    //            if dic[cur] == 100 , dic[next] == 500{
+    //                res += 400
+    //                i += 2
+    //                continue
+    //            }
+    //            if dic[cur] == 100 , dic[next] == 1000{
+    //                res += 900
+    //                i += 2
+    //                continue
+    //            }
+    //            i += 1
+    //            res += dic[cur]!
+    //        }
+    //
+    //        return res
+    //    }
     
     /// 柯里化特性
     func add(_ num: Int) -> (Int) -> Int {
-        
         func interAdd(_ val: Int) -> Int {
             return val + num
         }
         return interAdd
     }
-    
 }
-
