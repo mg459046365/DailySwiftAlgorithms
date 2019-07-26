@@ -117,6 +117,8 @@ class ViewController: UIViewController {
         
 //        let aa = Helper_20190724.findNearestNumber(12354)
 //        print("打印结果=\(aa)")
+        let test = Helper_20190726.minIntValueWithRemoveDigits(number: "541270936", removeCount: 3)
+        print("求的结果是\(test)")
     }
     
     /// 求最大公约数
