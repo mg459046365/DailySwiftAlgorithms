@@ -118,7 +118,7 @@ class ViewController: UIViewController {
 //        let aa = Helper_20190724.findNearestNumber(12354)
 //        print("打印结果=\(aa)")
 //        let test = Helper_20190726.minIntValueWithRemoveDigits(number: "541270936", removeCount: 3)
-        let test = Helper_20190731.addBigNumber(426709752318, 95481253129)
+        let test = Helper_20190731.addBigNumber("426709752318", "95481253129")
         print("求的结果是\(test)")
     }
     

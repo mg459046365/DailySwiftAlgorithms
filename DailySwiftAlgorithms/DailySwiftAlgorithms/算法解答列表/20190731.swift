@@ -18,9 +18,9 @@ struct Helper_20190731 {
     /// - Parameter num1: 参与计算的整数
     /// - Parameter num2: 参与计算整数
     
-    static func addBigNumber(_ num1: Int, _ num2: Int) -> String {
-        let str1 = "\(num1 >= num2 ? num1 : num2)"
-        var str2 = "\(num1 < num2 ? num1 : num2)"
+    static func addBigNumber(_ num1: String, _ num2: String) -> String {
+        let str1 = num1.count >= num2.count ? num1 : num2
+        var str2 = num1.count < num2.count ? num1 : num2
         
         for _ in 0 ..< str1.count - str2.count {
             // 高位补0
