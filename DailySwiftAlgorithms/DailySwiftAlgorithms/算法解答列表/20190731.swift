@@ -46,4 +46,60 @@ struct Helper_20190731 {
         return result
     }
     
+    
+    /// 求两个很大的整数之和，优化算法
+    ///
+    /// Int的类型的取值范围是 -2147483648 ~ 2147483647，最多可以由10位整数。为了防止溢出，
+    /// 我们可以把最大的整数的每9位作为数组的一个元素，进行加法。然后将得到的元素进行拼接成字符串。
+    /// 注意相加过程中的进位的处理。
+    /// - Parameter num1: 数字1
+    /// - Parameter num2: 数字2
+    static func addBigNumberOptimize(_ num1: String, _ num2: String) -> String {
+        var str1 = num1.count >= num2.count ? num1 : num2
+        var str2 = num1.count < num2.count ? num1 : num2
+        
+        if str1.count < 10 {
+            return "\(Int(str1)! + Int(str2)!)"
+        }
+        
+        for _ in 0 ..< str1.count - str2.count {
+            // 高位补0
+            str2 = "0" + str2
+        }
+        
+        let addZeroByNineCount = 9 - str1.count%9
+        for _ in 0 ..< addZeroByNineCount {
+            str1 = "0" + str1
+            str2 = "0" + str2
+        }
+        var res = ""
+        var carryVal = 0
+        var i = str1.count
+        var startIndex = str1.index(before: str1.endIndex)
+        let max = 1000000000
+        while i > 0 {
+            let index = str1.index(startIndex, offsetBy: -min(8, i) )
+            let str1 = String(str1[index ... startIndex])
+            let str2 = String(str2[index ... startIndex])
+            let val1 = Int(str1)!
+            let val2 = Int(str2)!
+            let addRes = val1 + val2 + carryVal
+            if addRes >= max {
+                res = "\(addRes - max)" + res
+                carryVal = 1
+            }else{
+                res = "\(addRes)" + res
+                carryVal = 0
+            }
+            i -= 9
+            if i > 0 {
+                startIndex = str1.index(before: index)
+            }
+        }
+        if carryVal == 1 {
+            res = "1" + res
+        }
+        return res
+    }
+    
 }

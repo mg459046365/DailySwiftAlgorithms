@@ -118,9 +118,11 @@ protocol Copyable: AnyObject {
 @propertyWrapper
 struct CopyOnWrite<Value: Copyable> {
     private var store: Value
-    init(initialValue: Value) {
-        store = initialValue
+    
+    init(wrappedValue: Value) {
+        store = wrappedValue
     }
+    
     var wrappedValue: Value {
         mutating get {
             if !isKnownUniquelyReferenced(&store) {
