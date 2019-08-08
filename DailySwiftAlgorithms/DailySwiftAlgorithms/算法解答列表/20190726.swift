@@ -60,4 +60,12 @@ struct Helper_20190726 {
         res += String(number[index ..< number.endIndex])
         return res
     }
+    
+    /// 测试方法
+    static func test() {
+        let num = "541270936"
+        let removeCount = 3
+        let result = Helper_20190726.minIntValueWithRemoveDigits(number: num, removeCount: removeCount)
+        print("测试结果\(result)")
+    }
 }

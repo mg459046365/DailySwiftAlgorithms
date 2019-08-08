@@ -35,6 +35,7 @@
 		B4D97AA922CB90E90056BDE5 /* 算法解答目录.md in Resources */ = {isa = PBXBuildFile; fileRef = B4D97AA822CB90E90056BDE5 /* 算法解答目录.md */; };
 		B4D97AAB22CB95420056BDE5 /* 20190702.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D97AAA22CB95420056BDE5 /* 20190702.swift */; };
 		B4E7D9E222CF01C900D1C044 /* 20190705.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E7D9E122CF01C900D1C044 /* 20190705.swift */; };
+		B4E8527922FAFCA10048DB56 /* 20190807.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8527822FAFCA10048DB56 /* 20190807.swift */; };
 		B4F9E5E22153F13300DB96CD /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E5E12153F13300DB96CD /* Stack.swift */; };
 		B4F9E5E52153F15100DB96CD /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E5E42153F15100DB96CD /* ListNode.swift */; };
 		B4F9E5E82153F5DF00DB96CD /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E5E72153F5DF00DB96CD /* Queue.swift */; };
@@ -73,6 +74,7 @@
 		B4D97AA822CB90E90056BDE5 /* 算法解答目录.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "算法解答目录.md"; sourceTree = "<group>"; };
 		B4D97AAA22CB95420056BDE5 /* 20190702.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190702.swift; sourceTree = "<group>"; };
 		B4E7D9E122CF01C900D1C044 /* 20190705.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190705.swift; sourceTree = "<group>"; };
+		B4E8527822FAFCA10048DB56 /* 20190807.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190807.swift; sourceTree = "<group>"; };
 		B4F9E5E12153F13300DB96CD /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		B4F9E5E42153F15100DB96CD /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		B4F9E5E72153F5DF00DB96CD /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				B451DFFB22E87EEA00D6079A /* 20190724.swift */,
 				B4AF8E2C22EB0D05009265F7 /* 20190726.swift */,
 				B497436A22F072F00008B7CB /* 20190731.swift */,
+				B4E8527822FAFCA10048DB56 /* 20190807.swift */,
 			);
 			path = "算法解答列表";
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				B4ACD88A22AE4AEC00C55C01 /* Heap.swift in Sources */,
 				B4F9E5E82153F5DF00DB96CD /* Queue.swift in Sources */,
 				B4B2D8512148BBB1008534BA /* ViewController.swift in Sources */,
+				B4E8527922FAFCA10048DB56 /* 20190807.swift in Sources */,
 				B48E6ACB22CE2A7000601236 /* 20190704.swift in Sources */,
 				B4D97AAB22CB95420056BDE5 /* 20190702.swift in Sources */,
 				B4E7D9E222CF01C900D1C044 /* 20190705.swift in Sources */,

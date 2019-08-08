@@ -62,4 +62,10 @@ struct Helper_20190724 {
         return Int(val)
     }
 
+    /// 测试
+    static func test() {
+        let number = 12354
+        let result = findNearestNumber(number)
+        print((result != nil) ? "测试结果\(result!)" : "已经最大，无法得到更大的数")
+    }
 }

@@ -9,119 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     var dic: [Int: Int] = [1: 1, 2: 2]
     var list = [String]()
     var sDic = [Character: Int]()
     var tDic = [Character: Int]()
-    //    var nums = [Int]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        let nums = [-2, 0, 3, -5, 2, -1]
-        //        let nums2 = [-2, 0, 0, -5, 7, 9]
-        //        let numsnums2 = nums.inte
-        //        let obj = NumArray(nums)
-        //        let ret_1 = obj.sumRange(0, 5)
-        
-        var result = [81, 94, 11, 96, 12, 35, 17, 95, 28, 58, 41, 75, 15]
-        result = SortUtils.bucketSort(result)
-        let maxDiff = Helper_20190705.getMaxDvalue2(result)
-        //        result = [1,2,3,4,5,6,7,8]
-        //       print("排序前的result=\(result)")
-        /// 冒泡排序
-        //       SortUtils.maoPaoSort(&result)
-        //        SortUtils.directInsertSort(&result);
-        //        SortUtils.shellSort(&result)
-        //        SortUtils.halfInsertSort(&result);
-        //        SortUtils.selecteSort(&result);
-        //        result = SortUtils.quickSort(result)
-        //        result = MegerSort.mergeSort(&result)
-        //        SortUtils.heapSort(&result)
-        //        let ss = SortUtils.halfSearch(result, target: 6)
-        //        let a = FibonacciSequence.Fib(10)
-        //        let b = FibonacciSequence.Fib1(10)
-        //        let c = FibonacciSequence.Fib2(10)
-        //        print("排序后的result=\(a), \(b), \(c)")
-        
-        //        let af = add(2)
-        //        let bf = add(3)
-        
-        //        print("加2 = \(af(4)), 加3 = \(bf(4))")
-        
-        //        let ar = (0...10).map{$0 * $0}.filter{$0 % 2 == 0}
-        //        let a = isPalindrome(1001)
-        //        let a = romanToInt("III")
-        //        var str: String = ""
-        
-        //        let a = longestCommonPrefix(["aca","cba"])
-        
-        //       let a = countAndSay(5)//        removeElement(&res, 2)
-        //        var ss:[Int] = [1, 2,3]
-        //        ss.insert(<#T##newElement: Int##Int#>, at: <#T##Int#>)
-        //
-        //        let sss = plusOne([9])
-        
-        //        let a = isValid("((")
-        //        let sss = addBinary("11", "1")
-        //        let sss = climbStairs(3)
-        //
-        //        var array: [Int] = [Int]()
-        //        array.contains(<#T##element: Int##Int#>)
-        
-        //        var a = [0]
-        ////        var m = 0
-        //        var b = [1]
-        //        var n = 1
-        //
-        //
-        //        merge(&a, m, b, n)
-        //        var path: String?
-        //        let s = "\(a)"
-        //        let curPath = (path != nil) ? (path! + s) : s
-        //        path?.isEmpty
-        //        let b = containsNearbyDuplicate([1,0,1,1], 1)
-        
-        //        var res = "dfdsffs"
-        //        let resCh = res[res.index(before: <#T##String.Index#>)]
-        //        let result = UInt8.max.addingReportingOverflow(1)
-        //        let data:[Any?] = ["Bill", nil]
-        //        print("打印结果=")
-        //        let status = "shiny"
-        //        for (i, j) in status.reversed().enumerated() where i % 2 == 0 {
-        //            print("\(i)\(j)")
-        //        }
-        //        printState(getNumber() == 5)
-        //        let aa = sort([3, 1, 2, 2, 4])
-        //        var res = [1,2,3,4,5,6,7]
-        //        rotate(&res, 3)
-        //        var res = countPrimes(10)
-        
-        //        let val = commonChars(list)
-        //            let aa = dateStr {
-        //                return "\(Date())"
-        //            }
-        //        let val = isAnagram("dgqztusjuu", "dqugjzutsu")
-        //        moveZeroes(&result)
-        //        var sum = maxSubArray([-2,1,-3,4,-1,2,1,-5,4])
-        //        let a = findNthDigit(11)
-        //        let ss = addBinary("408", "5")
-        //        let ss = countSegments("            ")
-        //        var result = [Character("a"),Character("a"),Character("b"),Character("b"),Character("c"),Character("c"),Character("c")]
-        //        let count = compress(&result)
-        //        let ss = maxCommonDivisor(3, 5)
-        //        SortUtils.quickSort(&result, startIndex: 0, endIndex: result.count - 1)
-        //        Heap.buildHeap(&result)
-        //        Heap.heapSort(&result);
-//        result = Helper_20190724.convertIntToList(12345)
-//        print("\(result)")
-//        print("最大差值\(maxDiff)")
-        
-//        let aa = Helper_20190724.findNearestNumber(12354)
-//        print("打印结果=\(aa)")
-//        let test = Helper_20190726.minIntValueWithRemoveDigits(number: "541270936", removeCount: 3)
-        let test = Helper_20190731.addBigNumber("426709752318", "95481253129")
-        let test1 = Helper_20190731.addBigNumberOptimize("426709752318", "95481253129")
-        print("求的结果是\(test),\(test1)")
+        testHelper()
     }
+    
+    
+    func testHelper() {
+//        Helper_20190724.test()
+//        Helper_20190726.test()
+//        Helper_20190731.test()
+        Helper_20190807.test()
+    }
+    
+    
+    
     
     /// 求最大公约数
     func maxCommonDivisor(_ a: Int, _ b: Int) -> Int {
