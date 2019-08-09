@@ -81,6 +81,47 @@ struct Helper_20190809 {
     }
     
     
+    //MARK: - 假设一个无序数组里有若干个正整数，范围是1-100，其中有98个整数出现了偶数次，只有两个整数出现了奇数次，如何找到这2个出现奇数次的整数呢。
+    
+    /// 遍历整个数组，并依次做异或运算，进行异或运算的最终结果，便是两个出现奇数次的整数异或运算的结果A。
+    /// A中至少有一个二进制位为1。从低位开始一次查看A的每一位，当遇到第一个为1的位(假设为位B)时，则说明这两个出现奇数次的数，在该位一个是1一个是0。
+    /// 可以根据上述描述的情况，对该数组分成两组，一组中的数字位B都为1，另一组的整数的位B都是0
+    /// 如此将两个奇数次的整数分别分配到了两个不同的数组中，然后两个数组的元素分别依次进行异或运算，分别求出数组中的奇数次整数。
+    ///
+    /// - Parameter list: 整数列表
+    static func findOddTimeNumbers(_ list: [Int]) -> (Int, Int)? {
+        
+        var xorAll = list[0]
+        for i in 1 ..< list.count {
+            //对所有的数据进行异或
+            xorAll = xorAll ^ list[i]
+        }
+        
+        if xorAll == 0 {
+            return nil
+        }
+        
+        //通过移位运算确定位数值为1的数
+        var sep = 1
+        while xorAll & sep == 0 {
+            sep = sep<<1
+        }
+        
+        // 开始分组,进行异或运算
+        // 创建一个tuple，第一个数表示该位置为0的数，第二个表示该位置为1的数
+        var tup: (zero: Int, one: Int) = (0, 0)
+        for num in list {
+            if 0 == num&sep {
+                tup.0 = tup.0^num
+            }else{
+                tup.1 = tup.1^num
+            }
+        }
+        return tup
+    }
+    
+    
+    
     /// 测试方法
     static func test() {
         var list = [Int]()
@@ -103,5 +144,13 @@ struct Helper_20190809 {
         list = [3, 1, 3, 2, 4, 1, 4]
         let res4 = findOddTimeNumber(list)
         print("出现奇数次的数为：\(res4)")
+        list = [4, 1, 2, 2, 5, 1, 4, 3]
+        let res5 = findOddTimeNumbers(list)
+        if let tup = res5 {
+            print("出现奇数次的数为：\(tup.0), \(tup.1)")
+        }else{
+            print("数据不合法")
+        }
+        
     }
 }
