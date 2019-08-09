@@ -149,7 +149,7 @@ struct Helper_20190809 {
         if let tup = res5 {
             print("出现奇数次的数为：\(tup.0), \(tup.1)")
         }else{
-            print("数据不合法")
+            print("数据中不存在两个都是奇数次出现的整数")
         }
         
     }
