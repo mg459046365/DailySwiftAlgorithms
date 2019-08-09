@@ -64,6 +64,9 @@ struct Helper_20190807 {
         return result.last!
     }
 
+    
+    
+    
     /// 测试方法
     static func test() {
         let goldMines = [
