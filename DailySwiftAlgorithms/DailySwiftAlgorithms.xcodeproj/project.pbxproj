@@ -20,6 +20,7 @@
 		B45AA3032238E3D2006867D9 /* FibonacciSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AA3022238E3D2006867D9 /* FibonacciSequence.swift */; };
 		B4656BCD21777D3500C840D8 /* QueueByStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4656BCC21777D3500C840D8 /* QueueByStack.swift */; };
 		B4656BCF21778A9A00C840D8 /* StackByQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4656BCE21778A9A00C840D8 /* StackByQueue.swift */; };
+		B468F3A7230506C500F1E857 /* 20190815.swift in Sources */ = {isa = PBXBuildFile; fileRef = B468F3A6230506C500F1E857 /* 20190815.swift */; };
 		B475E527224909D200481E12 /* MyViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475E526224909D200481E12 /* MyViewProtocol.swift */; };
 		B48E6ACB22CE2A7000601236 /* 20190704.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E6ACA22CE2A7000601236 /* 20190704.swift */; };
 		B48E6ACE22CE307200601236 /* 细说 Swift 4.2 新特性：Dynamic Member Lookup .md in Resources */ = {isa = PBXBuildFile; fileRef = B48E6ACD22CE307200601236 /* 细说 Swift 4.2 新特性：Dynamic Member Lookup .md */; };
@@ -57,6 +58,7 @@
 		B45AA3022238E3D2006867D9 /* FibonacciSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciSequence.swift; sourceTree = "<group>"; };
 		B4656BCC21777D3500C840D8 /* QueueByStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueByStack.swift; sourceTree = "<group>"; };
 		B4656BCE21778A9A00C840D8 /* StackByQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackByQueue.swift; sourceTree = "<group>"; };
+		B468F3A6230506C500F1E857 /* 20190815.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190815.swift; sourceTree = "<group>"; };
 		B475E526224909D200481E12 /* MyViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewProtocol.swift; sourceTree = "<group>"; };
 		B48E6ACA22CE2A7000601236 /* 20190704.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190704.swift; sourceTree = "<group>"; };
 		B48E6ACD22CE307200601236 /* 细说 Swift 4.2 新特性：Dynamic Member Lookup .md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "细说 Swift 4.2 新特性：Dynamic Member Lookup .md"; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				B497436A22F072F00008B7CB /* 20190731.swift */,
 				B4E8527822FAFCA10048DB56 /* 20190807.swift */,
 				B40E5ED722FD1B6E0073B904 /* 20190809.swift */,
+				B468F3A6230506C500F1E857 /* 20190815.swift */,
 			);
 			path = "算法解答列表";
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				B4F9E5E52153F15100DB96CD /* ListNode.swift in Sources */,
 				B4AF8E2D22EB0D05009265F7 /* 20190726.swift in Sources */,
 				B4B2D84F2148BBB1008534BA /* AppDelegate.swift in Sources */,
+				B468F3A7230506C500F1E857 /* 20190815.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
