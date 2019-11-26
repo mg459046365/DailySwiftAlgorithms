@@ -28,6 +28,7 @@
 		B4745D692382ED3700D35757 /* 进程调度.png in Resources */ = {isa = PBXBuildFile; fileRef = B4745D652382ED3700D35757 /* 进程调度.png */; };
 		B4745D6A2382ED3700D35757 /* 进程上下文切换.png in Resources */ = {isa = PBXBuildFile; fileRef = B4745D662382ED3700D35757 /* 进程上下文切换.png */; };
 		B475E527224909D200481E12 /* MyViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475E526224909D200481E12 /* MyViewProtocol.swift */; };
+		B486D92523858EB20049F283 /* BYPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B486D92423858EB20049F283 /* BYPerson.m */; };
 		B48E6ACB22CE2A7000601236 /* 20190704.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E6ACA22CE2A7000601236 /* 20190704.swift */; };
 		B48E6ACE22CE307200601236 /* 细说 Swift 4.2 新特性：Dynamic Member Lookup .md in Resources */ = {isa = PBXBuildFile; fileRef = B48E6ACD22CE307200601236 /* 细说 Swift 4.2 新特性：Dynamic Member Lookup .md */; };
 		B497436B22F072F00008B7CB /* 20190731.swift in Sources */ = {isa = PBXBuildFile; fileRef = B497436A22F072F00008B7CB /* 20190731.swift */; };
@@ -74,6 +75,8 @@
 		B4745D652382ED3700D35757 /* 进程调度.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "进程调度.png"; sourceTree = "<group>"; };
 		B4745D662382ED3700D35757 /* 进程上下文切换.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "进程上下文切换.png"; sourceTree = "<group>"; };
 		B475E526224909D200481E12 /* MyViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewProtocol.swift; sourceTree = "<group>"; };
+		B486D92323858EB20049F283 /* BYPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYPerson.h; sourceTree = "<group>"; };
+		B486D92423858EB20049F283 /* BYPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYPerson.m; sourceTree = "<group>"; };
 		B48E6ACA22CE2A7000601236 /* 20190704.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190704.swift; sourceTree = "<group>"; };
 		B48E6ACD22CE307200601236 /* 细说 Swift 4.2 新特性：Dynamic Member Lookup .md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "细说 Swift 4.2 新特性：Dynamic Member Lookup .md"; sourceTree = "<group>"; };
 		B497436A22F072F00008B7CB /* 20190731.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 20190731.swift; sourceTree = "<group>"; };
@@ -180,6 +183,8 @@
 				B4745D602382E88100D35757 /* BYTimerProxy.h */,
 				B4745D612382E88100D35757 /* BYTimerProxy.m */,
 				B4745D5F2382E88000D35757 /* DailySwiftAlgorithms-Bridging-Header.h */,
+				B486D92323858EB20049F283 /* BYPerson.h */,
+				B486D92423858EB20049F283 /* BYPerson.m */,
 			);
 			path = "Objective-C";
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 				B4F9E5E52153F15100DB96CD /* ListNode.swift in Sources */,
 				B4AF8E2D22EB0D05009265F7 /* 20190726.swift in Sources */,
 				B4B2D84F2148BBB1008534BA /* AppDelegate.swift in Sources */,
+				B486D92523858EB20049F283 /* BYPerson.m in Sources */,
 				B468F3A7230506C500F1E857 /* 20190815.swift in Sources */,
 				B4745D622382E88100D35757 /* BYTimerProxy.m in Sources */,
 			);
