@@ -9,5 +9,5 @@
 1. [Dynamic Member Lookup](https://github.com/mg459046365/DailySwiftAlgorithms/tree/master/DailySwiftAlgorithms/DailySwiftAlgorithms/Swift知识点/Dynamic%20Member%20Lookup)
 2. [属性包装器](https://github.com/mg459046365/DailySwiftAlgorithms/tree/master/DailySwiftAlgorithms/DailySwiftAlgorithms/Swift知识点/属性包装器)
 3. [不透明类型some](https://github.com/mg459046365/DailySwiftAlgorithms/tree/master/DailySwiftAlgorithms/DailySwiftAlgorithms/Swift知识点/不透明类型(some))
-4. [进程&线程相关知识点]([https://github.com/mg459046365/DailySwiftAlgorithms/blob/master/DailySwiftAlgorithms/DailySwiftAlgorithms/%E8%BF%9B%E7%A8%8B%26%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E4%B8%8E%E8%BF%9B%E7%A8%8B.md](https://github.com/mg459046365/DailySwiftAlgorithms/blob/master/DailySwiftAlgorithms/DailySwiftAlgorithms/进程%26线程/线程与进程.md))
+4. [进程&线程相关知识点](https://github.com/mg459046365/DailySwiftAlgorithms/blob/master/DailySwiftAlgorithms/DailySwiftAlgorithms/进程&线程/线程与进程.md))
 
