@@ -16,15 +16,23 @@ struct SortUtils {
     ///对每一对相邻元素做同样的操作,从开始第一对到结尾的最后一对。在这一点，最后的元素该会是最大的。
     ///针对所有的元素重复以上的步骤，除了最后一个。
     ///持续每次对越来越少的的元素重复上面的步骤，直到没有任何一对数字需要比较
+    /// 优化点：当某次冒泡没有数据操作时，说明已经完全有序，可以停止冒泡操作了
     static func bubbleSort(_ list: inout [Int]) {
         guard list.count > 1 else {
             return
         }
         for i in 0 ..< list.count {
+            var flag = false
             for j in 0 ..< list.count - i - 1 {
                 if list[j] > list[j+1] {
                     (list[j], list[j+1]) = (list[j+1], list[j])
+                    //表示有数据交换
+                    flag = true
                 }
+            }
+            if !flag {
+                // 没有数据交换，已经完全有序，跳出循环
+                break
             }
         }
     }
@@ -129,7 +137,7 @@ struct SortUtils {
 //    
     static func quickSort(_ list: inout [Int], startIndex: Int, endIndex: Int)  {
         if list.count < 2 {
-            return;
+            return
         }
         if startIndex >= endIndex {
             return;
