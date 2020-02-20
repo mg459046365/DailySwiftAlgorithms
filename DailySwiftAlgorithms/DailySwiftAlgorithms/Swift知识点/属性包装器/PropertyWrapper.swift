@@ -97,7 +97,7 @@ struct User2 {
 
 @propertyWrapper
 struct LateInitialized<Value> {
-    private var storage: Value?
+    var storage: Value?
     var wrappedValue: Value {
         get {
             guard let value = storage else { fatalError("value has not yet been set!") }

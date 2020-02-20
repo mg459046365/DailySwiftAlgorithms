@@ -10,4 +10,5 @@ import Foundation
 
 enum CustomError: Error {
     case stackIsEmpty
+    case error(Int, String)
 }

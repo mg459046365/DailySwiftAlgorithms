@@ -43,6 +43,7 @@
 		B4B2D8592148BBB1008534BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4B2D8572148BBB1008534BA /* LaunchScreen.storyboard */; };
 		B4B2D8622148BDEE008534BA /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B2D8612148BDEE008534BA /* Util.swift */; };
 		B4BF9C4622A4182D00FEFC45 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF9C4522A4182D00FEFC45 /* Test.swift */; };
+		B4D011CF23FEDBFF0046B209 /* 20200220.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D011CE23FEDBFF0046B209 /* 20200220.swift */; };
 		B4D97AA922CB90E90056BDE5 /* 算法解答目录.md in Resources */ = {isa = PBXBuildFile; fileRef = B4D97AA822CB90E90056BDE5 /* 算法解答目录.md */; };
 		B4D97AAB22CB95420056BDE5 /* 20190702.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D97AAA22CB95420056BDE5 /* 20190702.swift */; };
 		B4E7D9E222CF01C900D1C044 /* 20190705.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E7D9E122CF01C900D1C044 /* 20190705.swift */; };
@@ -96,6 +97,7 @@
 		B4B2D8602148BBC1008534BA /* DailySwiftAlgorithms.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DailySwiftAlgorithms.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B4B2D8612148BDEE008534BA /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		B4BF9C4522A4182D00FEFC45 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		B4D011CE23FEDBFF0046B209 /* 20200220.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200220.swift; sourceTree = "<group>"; };
 		B4D97AA822CB90E90056BDE5 /* 算法解答目录.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "算法解答目录.md"; sourceTree = "<group>"; };
 		B4D97AAA22CB95420056BDE5 /* 20190702.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190702.swift; sourceTree = "<group>"; };
 		B4E7D9E122CF01C900D1C044 /* 20190705.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190705.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				B468F3A6230506C500F1E857 /* 20190815.swift */,
 				B4A983FC238E1F68009FCE30 /* 20191127.swift */,
 				B4A983FE238F6E41009FCE30 /* 20191128.swift */,
+				B4D011CE23FEDBFF0046B209 /* 20200220.swift */,
 			);
 			path = "算法解答列表";
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				B42AB91522C9EDAE00EE0650 /* someArrayExtension.swift in Sources */,
 				B42AB91822C9EED200EE0650 /* PropertyWrapper.swift in Sources */,
 				B4656BCF21778A9A00C840D8 /* StackByQueue.swift in Sources */,
+				B4D011CF23FEDBFF0046B209 /* 20200220.swift in Sources */,
 				B497436B22F072F00008B7CB /* 20190731.swift in Sources */,
 				B475E527224909D200481E12 /* MyViewProtocol.swift in Sources */,
 				B45AA30122382BD1006867D9 /* MegerSort.swift in Sources */,
