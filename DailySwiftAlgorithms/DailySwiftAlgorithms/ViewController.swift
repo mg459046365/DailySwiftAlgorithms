@@ -26,8 +26,10 @@ class ViewController: UIViewController {
 //        Helper_20190807.test()
 //        Helper_20190809.test()
 //        Helper_20191127.test()
-        Helper_20200220.test()
+//        Helper_20200220.test()
+        Helper_20200224.test()
     }
+    
 
     /// 求最大公约数
     func maxCommonDivisor(_ a: Int, _ b: Int) -> Int {
