@@ -52,7 +52,7 @@
 		B4E7D9E222CF01C900D1C044 /* 20190705.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E7D9E122CF01C900D1C044 /* 20190705.swift */; };
 		B4E8527922FAFCA10048DB56 /* 20190807.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8527822FAFCA10048DB56 /* 20190807.swift */; };
 		B4EE0BD5241A7E9200759DA6 /* LazyDesc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE0BD4241A7E9200759DA6 /* LazyDesc.swift */; };
-		B4EE0BD7241A90A000759DA6 /* 20200312.swif.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE0BD6241A90A000759DA6 /* 20200312.swif.swift */; };
+		B4EE0BD7241A90A000759DA6 /* 20200312.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE0BD6241A90A000759DA6 /* 20200312.swift */; };
 		B4F37C38240D47440048EBE9 /* 20200302.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F37C37240D47440048EBE9 /* 20200302.swift */; };
 		B4F5A4DC24169CB3008F88F2 /* 20200309.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F5A4DB24169CB3008F88F2 /* 20200309.swift */; };
 		B4F9E5E22153F13300DB96CD /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E5E12153F13300DB96CD /* Stack.swift */; };
@@ -113,7 +113,7 @@
 		B4E7D9E122CF01C900D1C044 /* 20190705.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190705.swift; sourceTree = "<group>"; };
 		B4E8527822FAFCA10048DB56 /* 20190807.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190807.swift; sourceTree = "<group>"; };
 		B4EE0BD4241A7E9200759DA6 /* LazyDesc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyDesc.swift; sourceTree = "<group>"; };
-		B4EE0BD6241A90A000759DA6 /* 20200312.swif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200312.swif.swift; sourceTree = "<group>"; };
+		B4EE0BD6241A90A000759DA6 /* 20200312.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200312.swift; sourceTree = "<group>"; };
 		B4F37C37240D47440048EBE9 /* 20200302.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200302.swift; sourceTree = "<group>"; };
 		B4F5A4DB24169CB3008F88F2 /* 20200309.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200309.swift; sourceTree = "<group>"; };
 		B4F9E5E12153F13300DB96CD /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -301,7 +301,7 @@
 				B4F37C37240D47440048EBE9 /* 20200302.swift */,
 				B4F5A4DB24169CB3008F88F2 /* 20200309.swift */,
 				B47EAE3E2417E059009DEBEE /* 20200310.swift */,
-				B4EE0BD6241A90A000759DA6 /* 20200312.swif.swift */,
+				B4EE0BD6241A90A000759DA6 /* 20200312.swift */,
 			);
 			path = "算法解答列表";
 			sourceTree = "<group>";
@@ -429,7 +429,7 @@
 				B4A983FF238F6E41009FCE30 /* 20191128.swift in Sources */,
 				B4B2D8512148BBB1008534BA /* ViewController.swift in Sources */,
 				B4E8527922FAFCA10048DB56 /* 20190807.swift in Sources */,
-				B4EE0BD7241A90A000759DA6 /* 20200312.swif.swift in Sources */,
+				B4EE0BD7241A90A000759DA6 /* 20200312.swift in Sources */,
 				B48E6ACB22CE2A7000601236 /* 20190704.swift in Sources */,
 				B4D97AAB22CB95420056BDE5 /* 20190702.swift in Sources */,
 				B40E5ED822FD1B6E0073B904 /* 20190809.swift in Sources */,
