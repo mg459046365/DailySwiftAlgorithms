@@ -31,6 +31,7 @@ class LazyDesc {
     }
 
     // 使用lazy优化
+    // 对于那些不需要完全运行，可能提前退出的情况，使用 lazy 来进行性能优化效果会非常有效
     static func test2() {
         let data = 1 ... 3
         let result = data.lazy.map { i -> Int in
