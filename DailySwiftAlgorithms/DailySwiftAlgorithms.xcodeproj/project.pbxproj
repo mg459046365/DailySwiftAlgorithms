@@ -51,6 +51,7 @@
 		B4D97AAB22CB95420056BDE5 /* 20190702.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D97AAA22CB95420056BDE5 /* 20190702.swift */; };
 		B4E7D9E222CF01C900D1C044 /* 20190705.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E7D9E122CF01C900D1C044 /* 20190705.swift */; };
 		B4E8527922FAFCA10048DB56 /* 20190807.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8527822FAFCA10048DB56 /* 20190807.swift */; };
+		B4EE0BD5241A7E9200759DA6 /* LazyDesc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE0BD4241A7E9200759DA6 /* LazyDesc.swift */; };
 		B4F37C38240D47440048EBE9 /* 20200302.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F37C37240D47440048EBE9 /* 20200302.swift */; };
 		B4F5A4DC24169CB3008F88F2 /* 20200309.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F5A4DB24169CB3008F88F2 /* 20200309.swift */; };
 		B4F9E5E22153F13300DB96CD /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9E5E12153F13300DB96CD /* Stack.swift */; };
@@ -110,6 +111,7 @@
 		B4D97AAA22CB95420056BDE5 /* 20190702.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190702.swift; sourceTree = "<group>"; };
 		B4E7D9E122CF01C900D1C044 /* 20190705.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190705.swift; sourceTree = "<group>"; };
 		B4E8527822FAFCA10048DB56 /* 20190807.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190807.swift; sourceTree = "<group>"; };
+		B4EE0BD4241A7E9200759DA6 /* LazyDesc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyDesc.swift; sourceTree = "<group>"; };
 		B4F37C37240D47440048EBE9 /* 20200302.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200302.swift; sourceTree = "<group>"; };
 		B4F5A4DB24169CB3008F88F2 /* 20200309.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200309.swift; sourceTree = "<group>"; };
 		B4F9E5E12153F13300DB96CD /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		B42AB91022C9EC8300EE0650 /* Swift知识点 */ = {
 			isa = PBXGroup;
 			children = (
+				B4EE0BD3241A7E5600759DA6 /* Lazy性能优化 */,
 				B48E6ACC22CE304900601236 /* Dynamic Member Lookup */,
 				B42AB91622C9EE8000EE0650 /* 属性包装器 */,
 				B42AB91122C9ED1500EE0650 /* 不透明类型(some) */,
@@ -300,6 +303,14 @@
 			path = "算法解答列表";
 			sourceTree = "<group>";
 		};
+		B4EE0BD3241A7E5600759DA6 /* Lazy性能优化 */ = {
+			isa = PBXGroup;
+			children = (
+				B4EE0BD4241A7E9200759DA6 /* LazyDesc.swift */,
+			);
+			path = "Lazy性能优化";
+			sourceTree = "<group>";
+		};
 		B4F9E5E02153F11700DB96CD /* 栈 */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +440,7 @@
 				B4D011CF23FEDBFF0046B209 /* 20200220.swift in Sources */,
 				B497436B22F072F00008B7CB /* 20190731.swift in Sources */,
 				B475E527224909D200481E12 /* MyViewProtocol.swift in Sources */,
+				B4EE0BD5241A7E9200759DA6 /* LazyDesc.swift in Sources */,
 				B45AA30122382BD1006867D9 /* MegerSort.swift in Sources */,
 				B451DFFF22E8852500D6079A /* CustomError.swift in Sources */,
 				B43562A72404207500D09DCA /* 20200224.swift in Sources */,
@@ -597,7 +609,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = DailySwiftAlgorithms;
+				PRODUCT_BUNDLE_IDENTIFIER = MyDailySwiftAlgorithms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DailySwiftAlgorithms/Objective-C/DailySwiftAlgorithms-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -618,7 +630,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = DailySwiftAlgorithms;
+				PRODUCT_BUNDLE_IDENTIFIER = MyDailySwiftAlgorithms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DailySwiftAlgorithms/Objective-C/DailySwiftAlgorithms-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
