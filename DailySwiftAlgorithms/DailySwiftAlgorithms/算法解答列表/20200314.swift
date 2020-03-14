@@ -34,4 +34,24 @@ struct Helper_20200314 {
             return popList.popLast()!
         }
     }
+
+    // 用两个队列实现一个栈
+    class Stack {
+        private var pushQueue = [Int]()
+        private var popQueue = [Int]()
+
+        // 入栈
+        func push(_ val: Int) {
+            pushQueue.append(val)
+        }
+
+        // 出栈
+        func pop(_ val: Int) -> Int? {
+            if popQueue.isEmpty {
+                popQueue = pushQueue.reversed()
+                pushQueue.removeAll()
+            }
+            return popQueue.popLast()
+        }
+    }
 }
