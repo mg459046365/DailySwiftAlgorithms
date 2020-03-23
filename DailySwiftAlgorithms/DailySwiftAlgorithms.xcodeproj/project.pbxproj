@@ -51,6 +51,7 @@
 		B4B2D8622148BDEE008534BA /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B2D8612148BDEE008534BA /* Util.swift */; };
 		B4BF9C4622A4182D00FEFC45 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF9C4522A4182D00FEFC45 /* Test.swift */; };
 		B4BFFF1224265AA10001EDF7 /* 20200321.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFFF1124265AA10001EDF7 /* 20200321.swift */; };
+		B4BFFF152428A2860001EDF7 /* Associatedtype.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFFF142428A2860001EDF7 /* Associatedtype.swift */; };
 		B4D011CF23FEDBFF0046B209 /* 20200220.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D011CE23FEDBFF0046B209 /* 20200220.swift */; };
 		B4D97AA922CB90E90056BDE5 /* 算法解答目录.md in Resources */ = {isa = PBXBuildFile; fileRef = B4D97AA822CB90E90056BDE5 /* 算法解答目录.md */; };
 		B4D97AAB22CB95420056BDE5 /* 20190702.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D97AAA22CB95420056BDE5 /* 20190702.swift */; };
@@ -117,6 +118,7 @@
 		B4B2D8612148BDEE008534BA /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		B4BF9C4522A4182D00FEFC45 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		B4BFFF1124265AA10001EDF7 /* 20200321.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200321.swift; sourceTree = "<group>"; };
+		B4BFFF142428A2860001EDF7 /* Associatedtype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Associatedtype.swift; sourceTree = "<group>"; };
 		B4D011CE23FEDBFF0046B209 /* 20200220.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200220.swift; sourceTree = "<group>"; };
 		B4D97AA822CB90E90056BDE5 /* 算法解答目录.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "算法解答目录.md"; sourceTree = "<group>"; };
 		B4D97AAA22CB95420056BDE5 /* 20190702.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190702.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		B42AB91022C9EC8300EE0650 /* Swift知识点 */ = {
 			isa = PBXGroup;
 			children = (
+				B4BFFF132428A26B0001EDF7 /* associatedtype */,
 				B4EE0BD3241A7E5600759DA6 /* Lazy性能优化 */,
 				B48E6ACC22CE304900601236 /* Dynamic Member Lookup */,
 				B42AB91622C9EE8000EE0650 /* 属性包装器 */,
@@ -287,6 +290,14 @@
 				B4BF9C4522A4182D00FEFC45 /* Test.swift */,
 			);
 			path = DailySwiftAlgorithms;
+			sourceTree = "<group>";
+		};
+		B4BFFF132428A26B0001EDF7 /* associatedtype */ = {
+			isa = PBXGroup;
+			children = (
+				B4BFFF142428A2860001EDF7 /* Associatedtype.swift */,
+			);
+			path = associatedtype;
 			sourceTree = "<group>";
 		};
 		B4D97AA722CB90C30056BDE5 /* 算法解答列表 */ = {
@@ -439,6 +450,7 @@
 				B4F9E5E22153F13300DB96CD /* Stack.swift in Sources */,
 				B42AB93122CA331200EE0650 /* 20190701.swift in Sources */,
 				B400261B224BD8980061712C /* SumTest.swift in Sources */,
+				B4BFFF152428A2860001EDF7 /* Associatedtype.swift in Sources */,
 				B4BF9C4622A4182D00FEFC45 /* Test.swift in Sources */,
 				B4ACD88A22AE4AEC00C55C01 /* Heap.swift in Sources */,
 				B4F9E5E82153F5DF00DB96CD /* Queue.swift in Sources */,
