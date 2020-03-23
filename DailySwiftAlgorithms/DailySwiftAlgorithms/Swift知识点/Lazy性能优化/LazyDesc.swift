@@ -17,6 +17,7 @@ class LazyDesc {
         test1()
         test2()
     }
+
     static func test1() {
         let data = 1 ... 3
         let result = data.map { i -> Int in
@@ -43,5 +44,16 @@ class LazyDesc {
             print("lazy-遍历操作后的结果\(i)")
         }
         print("lazy-遍历完毕")
+    }
+
+    // 自动闭包相关知识点，将某一个表达式封装成闭包，将返回该参数类型的闭包作为参数
+    // 1. 自动闭包不支持有参数，必须是无参的
+    // 2. 闭包会被延迟调用，只有在真正被调用时，才能执行。有利于非必须执行且运算开销较大的代码
+    static func test3(closure: @autoclosure () -> Bool) -> Bool {
+        return closure()
+    }
+
+    static func test4() {
+        _ = test3(closure: 2 > 3)
     }
 }
