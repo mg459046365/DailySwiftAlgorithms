@@ -17,6 +17,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         testHelper()
+
+        var str = ""
+        var a = str.map {
+            Character(extendedGraphemeClusterLiteral: $0)
+        }
+        a.filter { $0 != "a" }
+        a.remove(at: 1)
+        a.append("b")
     }
 
     func testHelper() {
@@ -33,7 +41,6 @@ class ViewController: UIViewController {
 //        LazyDesc.test()
         Helper_20200312.test()
     }
-    
 
     /// 求最大公约数
     func maxCommonDivisor(_ a: Int, _ b: Int) -> Int {
