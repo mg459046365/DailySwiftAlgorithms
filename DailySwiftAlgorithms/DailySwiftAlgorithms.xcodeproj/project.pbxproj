@@ -26,6 +26,7 @@
 		B44194B32423C2E400D0F3C5 /* 20200319.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44194B22423C2E400D0F3C5 /* 20200319.swift */; };
 		B451DFFC22E87EEA00D6079A /* 20190724.swift in Sources */ = {isa = PBXBuildFile; fileRef = B451DFFB22E87EEA00D6079A /* 20190724.swift */; };
 		B451DFFF22E8852500D6079A /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B451DFFE22E8852500D6079A /* CustomError.swift */; };
+		B45844D024364F06000BC463 /* 20200402.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45844CF24364F06000BC463 /* 20200402.swift */; };
 		B45AA2FB22358FF7006867D9 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AA2FA22358FF7006867D9 /* Tree.swift */; };
 		B45AA2FF2236DE1E006867D9 /* SortUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AA2FE2236DE1E006867D9 /* SortUtils.swift */; };
 		B45AA30122382BD1006867D9 /* MegerSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AA30022382BD1006867D9 /* MegerSort.swift */; };
@@ -91,6 +92,7 @@
 		B44194B22423C2E400D0F3C5 /* 20200319.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200319.swift; sourceTree = "<group>"; };
 		B451DFFB22E87EEA00D6079A /* 20190724.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 20190724.swift; sourceTree = "<group>"; };
 		B451DFFE22E8852500D6079A /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		B45844CF24364F06000BC463 /* 20200402.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200402.swift; sourceTree = "<group>"; };
 		B45AA2FA22358FF7006867D9 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		B45AA2FD2236DA6E006867D9 /* 常用七种排序算法.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "常用七种排序算法.md"; sourceTree = "<group>"; };
 		B45AA2FE2236DE1E006867D9 /* SortUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortUtils.swift; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 				B43B6343242D0E84004C6146 /* 20200326.swift */,
 				B40EC215243259A800AA6F13 /* 20200330.swift */,
 				B40EC2472433A2E700AA6F13 /* 20200331.swift */,
+				B45844CF24364F06000BC463 /* 20200402.swift */,
 			);
 			path = "算法解答列表";
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				B4D011CF23FEDBFF0046B209 /* 20200220.swift in Sources */,
 				B497436B22F072F00008B7CB /* 20190731.swift in Sources */,
 				B475E527224909D200481E12 /* MyViewProtocol.swift in Sources */,
+				B45844D024364F06000BC463 /* 20200402.swift in Sources */,
 				B4EE0BD5241A7E9200759DA6 /* LazyDesc.swift in Sources */,
 				B45AA30122382BD1006867D9 /* MegerSort.swift in Sources */,
 				B451DFFF22E8852500D6079A /* CustomError.swift in Sources */,
