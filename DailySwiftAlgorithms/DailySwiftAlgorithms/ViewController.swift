@@ -33,6 +33,8 @@ class ViewController: UIViewController {
 //        LazyDesc.test()
 //        Solution_20200312.test()
 //        Solution_20200331.printNumToMaxOfDigits(3)
+        let res = Solution_20200405.isNumber("-1.")
+        print("输出是否是数字\(res)")
     }
 
     /// 求最大公约数

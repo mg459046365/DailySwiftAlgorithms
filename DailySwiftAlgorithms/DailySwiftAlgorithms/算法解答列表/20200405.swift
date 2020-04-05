@@ -20,8 +20,7 @@ class Solution_20200405 {
         if tp.isEmpty { return false }
         // 只有一个字符
         if tp.count == 1 {
-            let ch = tp.first!
-            return (ch >= "0" && ch <= "9")
+            return (tp.first! >= "0" && tp.first! <= "9")
         }
         // 遍历整数部分
         var (match, res) = scanInt(tp)
@@ -84,6 +83,6 @@ class Solution_20200405 {
             // 字符串以，去掉符号号位
             tmp.removeFirst()
         }
-        return scanUnignedInt(str)
+        return scanUnignedInt(tmp)
     }
 }
