@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Helper_20190704 {
+struct Solution_20190704 {
     //MARK: - 实现一个方法，来判断一个正整数是否是2的整数次幂（如16是2的4次方，返回true;18不是2的整数次幂，返回false）。要求性能尽可能高。
     
     /**

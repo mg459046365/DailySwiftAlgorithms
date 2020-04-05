@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Helper_20200302 {
+struct Solution_20200302 {
     /*
      题目： 请实现一个函数，把字符串中的每一个空格替换成“%20”。例如，输入“We are happy.”, 则输出“We%20are%20happy”.
      */

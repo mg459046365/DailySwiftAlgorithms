@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Helper_20190702 {
+struct Solution_20190702 {
     
     //MARK: - 题目： 写一段代码，求出两个整数的最大公约数，要尽量优化算法的性。
     

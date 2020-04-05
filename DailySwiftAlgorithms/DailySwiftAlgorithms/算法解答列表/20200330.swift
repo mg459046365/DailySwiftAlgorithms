@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct Helper_20200330 {
+struct Solution_20200330 {
     // 题目：实现函数double Power(double base, int exponent)，求base的exponent次方。不得使用库函数，同时不需要考虑大数问题。
     // 注意：exponent为0的时候，为1的时候。base为0和1的时候
 

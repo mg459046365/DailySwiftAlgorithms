@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Helper_20200404 {
+struct Solution_20200404 {
     // 题目：给定一个排序链表，删除所有含有重复数字的节点，只保留原始链表中 没有重复出现 的数字
 
     func deleteDuplicates(_ head: ListNode?) -> ListNode? {

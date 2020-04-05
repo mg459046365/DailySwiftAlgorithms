@@ -20,19 +20,19 @@ class ViewController: UIViewController {
     }
 
     func testHelper() {
-//        Helper_20190724.test()
-//        Helper_20190726.test()
-//        Helper_20190731.test()
-//        Helper_20190807.test()
-//        Helper_20190809.test()
-//        Helper_20191127.test()
-//        Helper_20200220.test()
-//        Helper_20200224.test()
-//        Helper_20200302.test()
-//        Helper_20200310.test()
+//        Solution_20190724.test()
+//        Solution_20190726.test()
+//        Solution_20190731.test()
+//        Solution_20190807.test()
+//        Solution_20190809.test()
+//        Solution_20191127.test()
+//        Solution_20200220.test()
+//        Solution_20200224.test()
+//        Solution_20200302.test()
+//        Solution_20200310.test()
 //        LazyDesc.test()
-//        Helper_20200312.test()
-        Helper_20200331.printNumToMaxOfDigits(3)
+//        Solution_20200312.test()
+//        Solution_20200331.printNumToMaxOfDigits(3)
     }
 
     /// 求最大公约数

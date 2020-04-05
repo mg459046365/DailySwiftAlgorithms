@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Helper_20200403 {
+struct Solution_20200403 {
     // 题目： 给定一个排序链表，删除所有重复的元素，使得每个元素只出现一次。
     func deleteDuplicates(_ head: ListNode?) -> ListNode? {
         if head == nil { return nil }

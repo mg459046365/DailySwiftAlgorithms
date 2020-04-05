@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Helper_20190726 {
+struct Solution_20190726 {
     // MARK: - 给出一个整数，从该整数中去掉K个数字，要求剩下的数字形成的新整数尽可能小。应该如何选取北被去掉的整数？其中整数的长度大于或等于K，给出的整数的大小可以超过long类型的数字范围。
 
     /// 删除整数的K个整数，获得删除后的最小值。运用栈的特性实现。
@@ -65,7 +65,7 @@ struct Helper_20190726 {
     static func test() {
         let num = "541270936"
         let removeCount = 3
-        let result = Helper_20190726.minIntValueWithRemoveDigits(number: num, removeCount: removeCount)
+        let result = Solution_20190726.minIntValueWithRemoveDigits(number: num, removeCount: removeCount)
         print("测试结果\(result)")
     }
 }

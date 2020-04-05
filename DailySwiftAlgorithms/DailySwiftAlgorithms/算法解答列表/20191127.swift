@@ -9,7 +9,7 @@
 import Foundation
 
 /// 如何在 O(n) 的时间复杂度内查找一个无序数组中的第 K 大元素, 采用快排分区分治思想
-struct Helper_20191127 {
+struct Solution_20191127 {
     private static func topValue(inList list: inout [Int], top: Int) -> Int {
         if list.isEmpty { return -1 }
         if top >= list.count { return -1 }

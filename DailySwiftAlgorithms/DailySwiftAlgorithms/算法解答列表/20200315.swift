@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct Helper_20200315 {
+struct Solution_20200315 {
     // 题目： 求斐波那契数列的第n项。
     // 写一个函数，输入n，求斐波那契数列的第n项。斐波那契数列的定义如下：f(0) = 0, f(1) = 1, 当n大于1时，f(n) = f(n - 1) + f(n - 2)。
     // 时间复杂度O(n)

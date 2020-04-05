@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct Helper_20191128 {
+struct Solution_20191128 {
     /// 二分查找, 假设list是从小到大有序集合
     static func binarySearch(list: [Int], val: Int) -> Int {
         guard !list.isEmpty else { return -1 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Helper_20190731 {
+struct Solution_20190731 {
     //MARK: - 给出两个很大的整数，要求实现程序求出两个整数之和。注意，两个整数的和有可能会超出整型的范围而溢出。
     
     
@@ -106,8 +106,8 @@ struct Helper_20190731 {
     static func test() {
         let num1 = "426709752318"
         let num2 = "95481253129"
-        let res1 = Helper_20190731.addBigNumber(num1, num2)
-        let res2 = Helper_20190731.addBigNumberOptimize(num1, num2)
+        let res1 = Solution_20190731.addBigNumber(num1, num2)
+        let res2 = Solution_20190731.addBigNumberOptimize(num1, num2)
         print("测试求值结果\(res1),\(res2)")
     }
     
