@@ -34,7 +34,8 @@ class ViewController: UIViewController {
 //        Solution_20200312.test()
 //        Solution_20200331.test()
 //        Solution_20200405.test()
-        Soulution_20200407.test()
+//        Soulution_20200407.test()
+        Soulution_20200407.testExtension()
     }
 
     /// 求最大公约数

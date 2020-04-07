@@ -40,12 +40,43 @@ class Soulution_20200407 {
         print("输出数组：\(res)")
         return res
     }
-    
+
     class func test() {
         solutionFunc([])
         solutionFunc([1])
         solutionFunc([1, 2])
         solutionFunc([2, 1])
         solutionFunc([1, 2, 3, 4, 5])
+    }
+
+    @discardableResult
+    class func solutionFuncExtension<T>(_ nums: [T], filter: (T) -> Bool) -> [T] {
+        print("输入数据:\(nums)")
+        guard !nums.isEmpty, nums.count > 2 else { return nums }
+        var left = 0
+        var right = nums.count - 1
+        var res = nums
+        while left < right {
+            if filter(nums[left]) {
+                left += 1
+                continue
+            }
+            if !filter(nums[right]) {
+                right -= 1
+                continue
+            }
+            (res[left], res[right]) = (res[right], res[left])
+            left += 1
+            right -= 1
+        }
+        print("输出结果:\(res)")
+        return res
+    }
+
+    class func testExtension() {
+        //测试能被三整除的在前面
+        solutionFuncExtension([1, 2, 3, 4, 5, 6, 7]) {
+            $0 % 3 == 0
+        }
     }
 }
