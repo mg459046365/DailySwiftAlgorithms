@@ -47,4 +47,8 @@ struct Solution_20200331 {
             recursivelyHelper(value: tmp, n: n, idx: idx + 1)
         }
     }
+    
+    static func test() {
+        printNumToMaxOfDigits(3)
+    }
 }

@@ -85,4 +85,9 @@ class Solution_20200405 {
         }
         return scanUnignedInt(tmp)
     }
+    
+    static func test() {
+        let res = Solution_20200405.isNumber("-1.")
+        print("输出是否是数字\(res)")
+    }
 }
