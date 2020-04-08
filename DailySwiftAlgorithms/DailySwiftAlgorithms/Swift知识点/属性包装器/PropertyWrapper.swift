@@ -8,10 +8,9 @@
 
 import Foundation
 
-
 /**
  当我们在一个类型中声明计算属性时，大部分属性的访问和获取都是有相同的用处，这些代码是可抽取的，如我们标记一些用户偏好设置，在计算属性的设置和获取中直接代理到 UserDefault的实现中，我们可以通过声明 @propertyWarpper 来修饰，可以减少大量重复代码。 在 SwiftUI中， @State @EnviromemntObject @bindingObject @Binding 都是通过属性包装器代理到 SwiftUI 框架中使其自动响应业务状态的变化。
- 
+
  使用属性包装器的好处除了可以减少重复代码，Swift Runtime 还保证了以下几点：
  1.对于实例的属性包装器是即时加载的
  2.对于类属性的属性保证器是懒加载的
@@ -28,6 +27,7 @@ struct User {
             UserDefaults.standard.set(newValue, forKey: "USES_TOUCH_ID")
         }
     }
+
     static var isLoggedIn: Bool {
         get {
             return UserDefaults.standard.bool(forKey: "LOGGED_IN")
@@ -37,22 +37,24 @@ struct User {
         }
     }
 }
+
 // after switft 5.1 ✅
 @propertyWrapper
 struct UserDefault<T> {
     let key: String
     let defaultValue: T
-    //属性包装器支持自定义构造器
+    // 属性包装器支持自定义构造器
     init(_ key: String, defaultValue: T) {
         print("UserDefault init")
         self.key = key
         self.defaultValue = defaultValue
         UserDefaults.standard.register(defaults: [key: defaultValue])
     }
+
     var wrappedValue: T {
         get {
             print("getter")
-            return UserDefaults.standard.object(forKey: key) as? T ??  defaultValue
+            return UserDefaults.standard.object(forKey: key) as? T ?? defaultValue
         }
         set {
             print("setter")
@@ -66,7 +68,6 @@ struct User2 {
     static var usesTouchID: Bool
     @UserDefault("LOGGED_IN", defaultValue: false)
     var isLoggedIn: Bool
-    
 }
 
 class TestPropertyWrapper {
@@ -77,23 +78,23 @@ class TestPropertyWrapper {
         user.isLoggedIn = true
     }
 }
-/**
-///实际上属性包装器是在编译时期翻译为以下的代码, 并且编译器禁止使用 $ 开头的标识符。
-struct User2 {
-    static var $usesTouchID = UserDefault<Bool>("USES_TOUCH_ID", defaultValue: false)
-    static var usesTouchID: Bool {
-        set {
-            $usesTouchID.value = newValue
-        }
-        get {
-            $usesTouchID.value
-        }
-    }
-    @UserDefault("LOGGED_IN", defaultValue: false)
-    var isLoggedIn: Bool
-}
-*/
 
+/**
+ ///实际上属性包装器是在编译时期翻译为以下的代码, 并且编译器禁止使用 $ 开头的标识符。
+ struct User2 {
+ static var $usesTouchID = UserDefault<Bool>("USES_TOUCH_ID", defaultValue: false)
+ static var usesTouchID: Bool {
+     set {
+         $usesTouchID.value = newValue
+     }
+     get {
+         $usesTouchID.value
+     }
+ }
+ @UserDefault("LOGGED_IN", defaultValue: false)
+ var isLoggedIn: Bool
+ }
+ */
 
 @propertyWrapper
 struct LateInitialized<Value> {
@@ -106,10 +107,10 @@ struct LateInitialized<Value> {
         set {
             storage = newValue
         }
-   }
+    }
 }
 
-//MARK: - struct中嵌套Class的拷贝问题（直接在struct中定义class类型的变量，struct拷贝时该class类型的变量是指针拷贝, 也就是浅复制）
+// MARK: - struct中嵌套Class的拷贝问题（直接在struct中定义class类型的变量，struct拷贝时该class类型的变量是指针拷贝, 也就是浅复制）
 
 protocol Copyable: AnyObject {
     func copy() -> Copyable
@@ -118,11 +119,11 @@ protocol Copyable: AnyObject {
 @propertyWrapper
 struct CopyOnWrite<Value: Copyable> {
     private var store: Value
-    
+
     init(wrappedValue: Value) {
         store = wrappedValue
     }
-    
+
     var wrappedValue: Value {
         mutating get {
             if !isKnownUniquelyReferenced(&store) {
@@ -157,13 +158,10 @@ struct PropertyWrapperTest {
     let pps = ["a", "b", "c"]
     var color: String
     @CopyOnWrite var model: CopyOnWriteTestModel
-    
+
     func test() {
         let model = CopyOnWriteTestModel()
         model.val = "测试"
-        let _ = PropertyWrapperTest(color: "sss", model: model)
+        _ = PropertyWrapperTest(color: "sss", model: model)
     }
 }
-
-
-
