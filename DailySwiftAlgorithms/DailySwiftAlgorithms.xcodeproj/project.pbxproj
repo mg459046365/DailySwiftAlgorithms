@@ -49,6 +49,7 @@
 		B486D92523858EB20049F283 /* BYPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B486D92423858EB20049F283 /* BYPerson.m */; };
 		B48E6ACB22CE2A7000601236 /* 20190704.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E6ACA22CE2A7000601236 /* 20190704.swift */; };
 		B48E6ACE22CE307200601236 /* 细说 Swift 4.2 新特性：Dynamic Member Lookup .md in Resources */ = {isa = PBXBuildFile; fileRef = B48E6ACD22CE307200601236 /* 细说 Swift 4.2 新特性：Dynamic Member Lookup .md */; };
+		B4930824243F72310015C19E /* EnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4930823243F72310015C19E /* EnumTest.swift */; };
 		B497436B22F072F00008B7CB /* 20190731.swift in Sources */ = {isa = PBXBuildFile; fileRef = B497436A22F072F00008B7CB /* 20190731.swift */; };
 		B4A983FD238E1F68009FCE30 /* 20191127.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A983FC238E1F68009FCE30 /* 20191127.swift */; };
 		B4A983FF238F6E41009FCE30 /* 20191128.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A983FE238F6E41009FCE30 /* 20191128.swift */; };
@@ -63,6 +64,7 @@
 		B4BF9C4622A4182D00FEFC45 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF9C4522A4182D00FEFC45 /* Test.swift */; };
 		B4BFFF1224265AA10001EDF7 /* 20200321.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFFF1124265AA10001EDF7 /* 20200321.swift */; };
 		B4BFFF152428A2860001EDF7 /* Associatedtype.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFFF142428A2860001EDF7 /* Associatedtype.swift */; };
+		B4CF06D92440D58D0041A918 /* BlockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF06D82440D58D0041A918 /* BlockTest.swift */; };
 		B4D011CF23FEDBFF0046B209 /* 20200220.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D011CE23FEDBFF0046B209 /* 20200220.swift */; };
 		B4D97AA922CB90E90056BDE5 /* 算法解答目录.md in Resources */ = {isa = PBXBuildFile; fileRef = B4D97AA822CB90E90056BDE5 /* 算法解答目录.md */; };
 		B4D97AAB22CB95420056BDE5 /* 20190702.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D97AAA22CB95420056BDE5 /* 20190702.swift */; };
@@ -124,6 +126,7 @@
 		B486D92423858EB20049F283 /* BYPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYPerson.m; sourceTree = "<group>"; };
 		B48E6ACA22CE2A7000601236 /* 20190704.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190704.swift; sourceTree = "<group>"; };
 		B48E6ACD22CE307200601236 /* 细说 Swift 4.2 新特性：Dynamic Member Lookup .md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "细说 Swift 4.2 新特性：Dynamic Member Lookup .md"; sourceTree = "<group>"; };
+		B4930823243F72310015C19E /* EnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumTest.swift; sourceTree = "<group>"; };
 		B497436A22F072F00008B7CB /* 20190731.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 20190731.swift; sourceTree = "<group>"; };
 		B4A983FC238E1F68009FCE30 /* 20191127.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20191127.swift; sourceTree = "<group>"; };
 		B4A983FE238F6E41009FCE30 /* 20191128.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20191128.swift; sourceTree = "<group>"; };
@@ -141,6 +144,7 @@
 		B4BF9C4522A4182D00FEFC45 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		B4BFFF1124265AA10001EDF7 /* 20200321.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200321.swift; sourceTree = "<group>"; };
 		B4BFFF142428A2860001EDF7 /* Associatedtype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Associatedtype.swift; sourceTree = "<group>"; };
+		B4CF06D82440D58D0041A918 /* BlockTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTest.swift; sourceTree = "<group>"; };
 		B4D011CE23FEDBFF0046B209 /* 20200220.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200220.swift; sourceTree = "<group>"; };
 		B4D97AA822CB90E90056BDE5 /* 算法解答目录.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "算法解答目录.md"; sourceTree = "<group>"; };
 		B4D97AAA22CB95420056BDE5 /* 20190702.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190702.swift; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 		B42AB91022C9EC8300EE0650 /* Swift知识点 */ = {
 			isa = PBXGroup;
 			children = (
+				B4CF06D72440D5740041A918 /* 闭包捕获值 */,
+				B4930822243F72140015C19E /* 枚举内存布局 */,
 				B4BFFF132428A26B0001EDF7 /* associatedtype */,
 				B4EE0BD3241A7E5600759DA6 /* Lazy性能优化 */,
 				B48E6ACC22CE304900601236 /* Dynamic Member Lookup */,
@@ -261,6 +267,14 @@
 			path = "Dynamic Member Lookup";
 			sourceTree = "<group>";
 		};
+		B4930822243F72140015C19E /* 枚举内存布局 */ = {
+			isa = PBXGroup;
+			children = (
+				B4930823243F72310015C19E /* EnumTest.swift */,
+			);
+			path = "枚举内存布局";
+			sourceTree = "<group>";
+		};
 		B4ACD88822AE4AA600C55C01 /* 堆 */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +334,14 @@
 				B4BFFF142428A2860001EDF7 /* Associatedtype.swift */,
 			);
 			path = associatedtype;
+			sourceTree = "<group>";
+		};
+		B4CF06D72440D5740041A918 /* 闭包捕获值 */ = {
+			isa = PBXGroup;
+			children = (
+				B4CF06D82440D58D0041A918 /* BlockTest.swift */,
+			);
+			path = "闭包捕获值";
 			sourceTree = "<group>";
 		};
 		B4D97AA722CB90C30056BDE5 /* 算法解答列表 */ = {
@@ -479,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B427ECA0243CD83E00CC9C59 /* 20200407.swift in Sources */,
+				B4CF06D92440D58D0041A918 /* BlockTest.swift in Sources */,
 				B4A983FD238E1F68009FCE30 /* 20191127.swift in Sources */,
 				B4BFFF1224265AA10001EDF7 /* 20200321.swift in Sources */,
 				B4F9E5E22153F13300DB96CD /* Stack.swift in Sources */,
@@ -499,6 +522,7 @@
 				B48E6ACB22CE2A7000601236 /* 20190704.swift in Sources */,
 				B44193DE241D37EF00D0F3C5 /* 20200315.swift in Sources */,
 				B4D97AAB22CB95420056BDE5 /* 20190702.swift in Sources */,
+				B4930824243F72310015C19E /* EnumTest.swift in Sources */,
 				B40E5ED822FD1B6E0073B904 /* 20190809.swift in Sources */,
 				B4E7D9E222CF01C900D1C044 /* 20190705.swift in Sources */,
 				B4206B732405687F0097F057 /* 20200225.swift in Sources */,
