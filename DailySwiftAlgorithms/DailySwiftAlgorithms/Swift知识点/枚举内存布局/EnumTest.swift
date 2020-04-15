@@ -37,6 +37,34 @@ enum TestEnum3 {
     case test(String)
 }
 
+// MemoryLayout<TEnum4>.size=9
+enum TEnum4 {
+    case test(Int)
+    case test1(Bool)
+}
+
+// MemoryLayout<TEnum5>.size=10
+enum TEnum5 {
+    case test1(Bool)
+    case test(Int, Bool, Bool)
+    case test2(Int)
+    case test3(Int)
+    case test4(Int)
+    case test5(Bool)
+    case test6(Int)
+    case test7(Int)
+    case test8(Int)
+    case test9(Int)
+    case test21(Int)
+    case test31(Int)
+    case test41(Int)
+    case test51(Bool)
+    case test61(Int)
+    case test71(Int)
+    case test81(Int)
+    case test91(Int)
+}
+
 class EnumTest {
     // 分别通过MemoryLayout.size(ofValue:t1)实例大小、MemoryLayout.stride(ofValue:t1)实际分配的内存大小
     // MemoryLayout.alignment(ofValue:t1)对齐、UnsafeMutablePointer(&t1)地址，获取相关信息
@@ -78,11 +106,25 @@ class EnumTest {
     // 7.第一个case为内存存储为0，每个case内存存储的值依次累加1(按照case是顺序)，
     // 类似于数组中的索引，每个case对应内存中存储的值是case出现的索引值，第一个case索引为0。
     // 说明枚举范围也就是0x00-0xFF共256个case
-    
+
     // 特别说明第1点和第2点，结合第6第7点，可以借助汇编查看内存存储的数据
     // 根据第一点，TestEnum2的size应该是8(Int所占字节)+1(Bool所占字节)+1(成员值所占字节) = 10，但是输出size却是9。
     // 同TestEnum3，根据第一点结论size应该是16+1=17才对，求出size却是16.
+
+    // 关于+1的讨论
+    // 根据第7条，每一个case都有一个类似的索引的东西，且从0开始
+    // TEnum4，int占8个字节，Bool占1个字节。可能我们认为只需要8个字节就足够了。
+    // 假设定义如下变量：
+    var a = TEnum4.test(0)
+    var b = TEnum4.test1(false)
+    // 此时a和b，在内存地址中的数据都是00 00 00 00 00 00 00 00
+    // 如果是8个字节的话，是没有办法区分的到底是.test还是.test1,这样的话就需要一个字节，来区分case了。
+    // 所以TEnum4的size是8+1 = 9
+    // 也就是说当枚举存储关联值所需要的字节数的之和最大的那个case，如果无法区分是哪个case的时候，就需要多分配1个字节用于区分是哪个case.
     
     
-    //TODO: 待再次研究，确认，先搁置这里。以上结论不全对。
+    //这里在看TEnum5这种枚举类型,我们第一眼可能会想到需要11个字节，int需要8个字节，两个bool需要2个字节，然后在分配一个字节用来区分是哪一个case,
+    //但实际上size = 10，测试过程中，swift会借助最后一个字节即用它来表示bool的值又用它来区分是哪一条case，但具体是采用怎样的机制来区分case的
+    //暂时还没有找到原理或者底层机制。后续在学习。
+    //TODO:
 }
