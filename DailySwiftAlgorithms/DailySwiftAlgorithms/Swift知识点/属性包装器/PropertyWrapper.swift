@@ -165,3 +165,20 @@ struct PropertyWrapperTest {
         _ = PropertyWrapperTest(color: "sss", model: model)
     }
 }
+
+@propertyWrapper
+struct MineWrapper<T> {
+    var wrappedValue: T
+    var prejectedValue: MineWrapper<T> { return self }
+    func foo() {
+        print("Fool")
+    }
+}
+
+struct TestMineWrapper {
+    @MineWrapper var x = 0
+    func foo() {
+        print(x) //打印 0
+        print(_x) //打印 MineWrapper<Int>(wrappedValue: 0)
+    }
+}

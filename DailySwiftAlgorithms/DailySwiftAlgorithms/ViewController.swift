@@ -36,6 +36,7 @@ class ViewController: UIViewController {
 //        Solution_20200405.test()
 //        Solution_20200407.test()
 //        Solution_20200407.testExtension()
+        TestMineWrapper().foo()
         Solution_20200408.test()
     }
 
