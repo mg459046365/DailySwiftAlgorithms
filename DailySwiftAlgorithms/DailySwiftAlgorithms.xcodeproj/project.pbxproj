@@ -51,6 +51,7 @@
 		B48E6ACE22CE307200601236 /* 细说 Swift 4.2 新特性：Dynamic Member Lookup .md in Resources */ = {isa = PBXBuildFile; fileRef = B48E6ACD22CE307200601236 /* 细说 Swift 4.2 新特性：Dynamic Member Lookup .md */; };
 		B4930824243F72310015C19E /* EnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4930823243F72310015C19E /* EnumTest.swift */; };
 		B497436B22F072F00008B7CB /* 20190731.swift in Sources */ = {isa = PBXBuildFile; fileRef = B497436A22F072F00008B7CB /* 20190731.swift */; };
+		B49A05C42450A2C700126B56 /* Swift知识点.md in Resources */ = {isa = PBXBuildFile; fileRef = B49A05C32450A2C700126B56 /* Swift知识点.md */; };
 		B4A983FD238E1F68009FCE30 /* 20191127.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A983FC238E1F68009FCE30 /* 20191127.swift */; };
 		B4A983FF238F6E41009FCE30 /* 20191128.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A983FE238F6E41009FCE30 /* 20191128.swift */; };
 		B4ACD88A22AE4AEC00C55C01 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ACD88922AE4AEC00C55C01 /* Heap.swift */; };
@@ -133,6 +134,7 @@
 		B48E6ACD22CE307200601236 /* 细说 Swift 4.2 新特性：Dynamic Member Lookup .md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "细说 Swift 4.2 新特性：Dynamic Member Lookup .md"; sourceTree = "<group>"; };
 		B4930823243F72310015C19E /* EnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumTest.swift; sourceTree = "<group>"; };
 		B497436A22F072F00008B7CB /* 20190731.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 20190731.swift; sourceTree = "<group>"; };
+		B49A05C32450A2C700126B56 /* Swift知识点.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Swift知识点.md"; sourceTree = "<group>"; };
 		B4A983FC238E1F68009FCE30 /* 20191127.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20191127.swift; sourceTree = "<group>"; };
 		B4A983FE238F6E41009FCE30 /* 20191128.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20191128.swift; sourceTree = "<group>"; };
 		B4ACD88922AE4AEC00C55C01 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 		B42AB91022C9EC8300EE0650 /* Swift知识点 */ = {
 			isa = PBXGroup;
 			children = (
+				B49A05C32450A2C700126B56 /* Swift知识点.md */,
 				B4B90F11244A1080009C7F51 /* 自定义运算符 */,
 				B4CF06D72440D5740041A918 /* 闭包捕获值 */,
 				B4930822243F72140015C19E /* 枚举内存布局 */,
@@ -513,6 +516,7 @@
 				B4745D6A2382ED3700D35757 /* 进程上下文切换.png in Resources */,
 				B4745D692382ED3700D35757 /* 进程调度.png in Resources */,
 				B4B2D8542148BBB1008534BA /* Main.storyboard in Resources */,
+				B49A05C42450A2C700126B56 /* Swift知识点.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
