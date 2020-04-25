@@ -75,6 +75,50 @@ class Solution_20200424 {
         return list
     }
 
+    // 思路： 循环的条件是columns>2*startX并且rows>2*startY
+    class func spiralOrderRecursive(_ matrix: [[Int]]) -> [Int] {
+        if matrix.isEmpty { return [] }
+        var start = 0
+        let columns = matrix[0].count
+        let rows = matrix.count
+        var list = [Int]()
+        while columns > 2 * start, rows > 2 * start {
+            let tmp = spiralOrderRecursiveHelper(matrix, columns: columns, rows: rows, start: start)
+            list.append(contentsOf: tmp)
+            start += 1
+        }
+        return list
+    }
+
+    class func spiralOrderRecursiveHelper(_ matrix: [[Int]], columns: Int, rows: Int, start: Int) -> [Int] {
+        let endX = columns - 1 - start
+        let endY = rows - 1 - start
+        var list = [Int]()
+        // 从左到右输出第一行
+        list.append(contentsOf: matrix[start][start ... endX])
+        // 从上到下输出最右侧的列数据
+        if start < endY {
+            for i in start + 1 ... endY {
+                list.append(matrix[i][endX])
+            }
+        }
+        // 从右到左输出最底部的行数据
+        if start < endX, start < endY {
+            for i in (start ... endX - 1).reversed() {
+                list.append(matrix[endY][i])
+            }
+        }
+
+        // 从下到上打印最左侧的列
+        if start < endX, start < endY - 1 {
+            for i in (start + 1 ... endY - 1).reversed() {
+                list.append(matrix[i][start])
+            }
+        }
+
+        return list
+    }
+
     class func test() {
         // 测试用例
         // [1, 2, 3, 6, 9, 8, 7, 4, 5]
