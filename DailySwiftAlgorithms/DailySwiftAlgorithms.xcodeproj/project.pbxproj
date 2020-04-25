@@ -37,6 +37,7 @@
 		B45AA30122382BD1006867D9 /* MegerSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AA30022382BD1006867D9 /* MegerSort.swift */; };
 		B45AA3032238E3D2006867D9 /* FibonacciSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AA3022238E3D2006867D9 /* FibonacciSequence.swift */; };
 		B462CF0A2453459C0027AEF1 /* 20200424.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462CF092453459C0027AEF1 /* 20200424.swift */; };
+		B462CF0D2454777C0027AEF1 /* CrashCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462CF0C2454777C0027AEF1 /* CrashCollection.swift */; };
 		B4656BCD21777D3500C840D8 /* QueueByStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4656BCC21777D3500C840D8 /* QueueByStack.swift */; };
 		B4656BCF21778A9A00C840D8 /* StackByQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4656BCE21778A9A00C840D8 /* StackByQueue.swift */; };
 		B468F3A7230506C500F1E857 /* 20190815.swift in Sources */ = {isa = PBXBuildFile; fileRef = B468F3A6230506C500F1E857 /* 20190815.swift */; };
@@ -119,6 +120,7 @@
 		B45AA30022382BD1006867D9 /* MegerSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegerSort.swift; sourceTree = "<group>"; };
 		B45AA3022238E3D2006867D9 /* FibonacciSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciSequence.swift; sourceTree = "<group>"; };
 		B462CF092453459C0027AEF1 /* 20200424.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200424.swift; sourceTree = "<group>"; };
+		B462CF0C2454777C0027AEF1 /* CrashCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashCollection.swift; sourceTree = "<group>"; };
 		B4656BCC21777D3500C840D8 /* QueueByStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueByStack.swift; sourceTree = "<group>"; };
 		B4656BCE21778A9A00C840D8 /* StackByQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackByQueue.swift; sourceTree = "<group>"; };
 		B468F3A6230506C500F1E857 /* 20190815.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190815.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		B42AB91022C9EC8300EE0650 /* Swift知识点 */ = {
 			isa = PBXGroup;
 			children = (
+				B462CF0B245477320027AEF1 /* Swift中异常捕获 */,
 				B49A05C32450A2C700126B56 /* Swift知识点.md */,
 				B4B90F11244A1080009C7F51 /* 自定义运算符 */,
 				B4CF06D72440D5740041A918 /* 闭包捕获值 */,
@@ -255,6 +258,14 @@
 				B45AA3022238E3D2006867D9 /* FibonacciSequence.swift */,
 			);
 			path = "排序";
+			sourceTree = "<group>";
+		};
+		B462CF0B245477320027AEF1 /* Swift中异常捕获 */ = {
+			isa = PBXGroup;
+			children = (
+				B462CF0C2454777C0027AEF1 /* CrashCollection.swift */,
+			);
+			path = "Swift中异常捕获";
 			sourceTree = "<group>";
 		};
 		B4745D5E2382E83D00D35757 /* Objective-C */ = {
@@ -566,6 +577,7 @@
 				B4E7D9E222CF01C900D1C044 /* 20190705.swift in Sources */,
 				B4206B732405687F0097F057 /* 20200225.swift in Sources */,
 				B45AA2FB22358FF7006867D9 /* Tree.swift in Sources */,
+				B462CF0D2454777C0027AEF1 /* CrashCollection.swift in Sources */,
 				B4F37C38240D47440048EBE9 /* 20200302.swift in Sources */,
 				B4CB41FA2444CBB1000BE68E /* 20200413.swift in Sources */,
 				B451DFFC22E87EEA00D6079A /* 20190724.swift in Sources */,
