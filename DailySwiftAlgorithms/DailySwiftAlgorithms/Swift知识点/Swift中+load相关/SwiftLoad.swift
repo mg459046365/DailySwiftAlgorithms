@@ -10,7 +10,7 @@
 // swift4.2开始：swift代码class 的initialze也不能被重写了，但可以用OC的category方式添加load/initialze方法
 // swift5开始：swift的class只能用OC代码的category添加initialze。
 
-//方案： 通过runtime遍历类类列表找到对应遵从协议的类，并调用
+// 方案： 通过runtime遍历类类列表找到对应遵从协议的类，并调用
 
 import Foundation
 import UIKit
@@ -38,7 +38,7 @@ extension UIApplication {
     }()
 
     override open var next: UIResponder? {
-        // Called before applicationDidFinishLaunching
+        // UIApplication的下一个Responder是AppDelegate，因而下面这句代码会在 applicationDidFinishLaunching之前调用
         UIApplication.runOnce
         return super.next
     }
