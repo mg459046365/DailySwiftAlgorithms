@@ -21,6 +21,7 @@
 		B42AB91522C9EDAE00EE0650 /* someArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42AB91422C9EDAE00EE0650 /* someArrayExtension.swift */; };
 		B42AB91822C9EED200EE0650 /* PropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42AB91722C9EED200EE0650 /* PropertyWrapper.swift */; };
 		B42AB93122CA331200EE0650 /* 20190701.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42AB93022CA331200EE0650 /* 20190701.swift */; };
+		B42EBFFB25EBD60100545821 /* SwiftLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42EBFFA25EBD60100545821 /* SwiftLoad.swift */; };
 		B43211E6242A67D300246F3A /* 20200324.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43211E5242A67D300246F3A /* 20200324.swift */; };
 		B43562A72404207500D09DCA /* 20200224.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43562A62404207500D09DCA /* 20200224.swift */; };
 		B43B6344242D0E84004C6146 /* 20200326.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43B6343242D0E84004C6146 /* 20200326.swift */; };
@@ -106,6 +107,7 @@
 		B42AB91422C9EDAE00EE0650 /* someArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = someArrayExtension.swift; sourceTree = "<group>"; };
 		B42AB91722C9EED200EE0650 /* PropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapper.swift; sourceTree = "<group>"; };
 		B42AB93022CA331200EE0650 /* 20190701.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190701.swift; sourceTree = "<group>"; };
+		B42EBFFA25EBD60100545821 /* SwiftLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLoad.swift; sourceTree = "<group>"; };
 		B43211E5242A67D300246F3A /* 20200324.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200324.swift; sourceTree = "<group>"; };
 		B43562A62404207500D09DCA /* 20200224.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200224.swift; sourceTree = "<group>"; };
 		B43B6343242D0E84004C6146 /* 20200326.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200326.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		B42AB91022C9EC8300EE0650 /* Swift知识点 */ = {
 			isa = PBXGroup;
 			children = (
+				B42EBFF925EBD5DF00545821 /* Swift中+load相关 */,
 				B462CF0B245477320027AEF1 /* Swift中异常捕获 */,
 				B49A05C32450A2C700126B56 /* Swift知识点.md */,
 				B4B90F11244A1080009C7F51 /* 自定义运算符 */,
@@ -225,6 +228,14 @@
 				B42AB91722C9EED200EE0650 /* PropertyWrapper.swift */,
 			);
 			path = "属性包装器";
+			sourceTree = "<group>";
+		};
+		B42EBFF925EBD5DF00545821 /* Swift中+load相关 */ = {
+			isa = PBXGroup;
+			children = (
+				B42EBFFA25EBD60100545821 /* SwiftLoad.swift */,
+			);
+			path = "Swift中+load相关";
 			sourceTree = "<group>";
 		};
 		B43F63BC2323945F00F866C5 /* 进程&线程 */ = {
@@ -560,6 +571,7 @@
 				B4CF06DD244227AD0041A918 /* 20200411.swift in Sources */,
 				B462CF0F2455EC2C0027AEF1 /* MinStack.swift in Sources */,
 				B4BFFF1224265AA10001EDF7 /* 20200321.swift in Sources */,
+				B42EBFFB25EBD60100545821 /* SwiftLoad.swift in Sources */,
 				B4E7F1852448BE0200ED7742 /* 20200416.swift in Sources */,
 				B462CF0A2453459C0027AEF1 /* 20200424.swift in Sources */,
 				B4B90F13244A10AA009C7F51 /* DefineOperator.swift in Sources */,

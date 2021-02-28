@@ -6,7 +6,7 @@
 //  Copyright © 2019 Beryter. All rights reserved.
 //
 
-/// 实现LRU(Least Recently Used)，最近最少使用。暂未考虑线程安全的问题。
+/// 实现LRU(Least Recently Used)，最近最少使用。暂未考虑线程安全的问题。双向链表
 
 import Foundation
 
