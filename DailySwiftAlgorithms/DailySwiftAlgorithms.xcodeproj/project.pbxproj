@@ -13,6 +13,7 @@
 		B40EC2482433A2E700AA6F13 /* 20200331.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40EC2472433A2E700AA6F13 /* 20200331.swift */; };
 		B41E8DF5242914E500072E7D /* 20200323.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E8DF4242914E500072E7D /* 20200323.swift */; };
 		B4206B732405687F0097F057 /* 20200225.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4206B722405687F0097F057 /* 20200225.swift */; };
+		B4210B0E25F6732F00E859EF /* 20210308.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4210B0D25F6732F00E859EF /* 20210308.swift */; };
 		B427EC982437A0BE00CC9C59 /* 20200403.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427EC972437A0BE00CC9C59 /* 20200403.swift */; };
 		B427EC9A2438959100CC9C59 /* 20200404.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427EC992438959100CC9C59 /* 20200404.swift */; };
 		B427EC9C2439FD8100CC9C59 /* 20200405.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427EC9B2439FD8100CC9C59 /* 20200405.swift */; };
@@ -51,6 +52,7 @@
 		B4745D692382ED3700D35757 /* 进程调度.png in Resources */ = {isa = PBXBuildFile; fileRef = B4745D652382ED3700D35757 /* 进程调度.png */; };
 		B4745D6A2382ED3700D35757 /* 进程上下文切换.png in Resources */ = {isa = PBXBuildFile; fileRef = B4745D662382ED3700D35757 /* 进程上下文切换.png */; };
 		B475E527224909D200481E12 /* MyViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475E526224909D200481E12 /* MyViewProtocol.swift */; };
+		B478BF0825ED41ED002E22B6 /* DefenceUnSelectorCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = B478BF0725ED41ED002E22B6 /* DefenceUnSelectorCrash.m */; };
 		B47EAE3F2417E059009DEBEE /* 20200310.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47EAE3E2417E059009DEBEE /* 20200310.swift */; };
 		B486D92523858EB20049F283 /* BYPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B486D92423858EB20049F283 /* BYPerson.m */; };
 		B48E6ACB22CE2A7000601236 /* 20190704.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48E6ACA22CE2A7000601236 /* 20190704.swift */; };
@@ -99,6 +101,7 @@
 		B40EC2472433A2E700AA6F13 /* 20200331.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200331.swift; sourceTree = "<group>"; };
 		B41E8DF4242914E500072E7D /* 20200323.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200323.swift; sourceTree = "<group>"; };
 		B4206B722405687F0097F057 /* 20200225.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200225.swift; sourceTree = "<group>"; };
+		B4210B0D25F6732F00E859EF /* 20210308.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20210308.swift; sourceTree = "<group>"; };
 		B427EC972437A0BE00CC9C59 /* 20200403.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200403.swift; sourceTree = "<group>"; };
 		B427EC992438959100CC9C59 /* 20200404.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200404.swift; sourceTree = "<group>"; };
 		B427EC9B2439FD8100CC9C59 /* 20200405.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200405.swift; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 		B4745D652382ED3700D35757 /* 进程调度.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "进程调度.png"; sourceTree = "<group>"; };
 		B4745D662382ED3700D35757 /* 进程上下文切换.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "进程上下文切换.png"; sourceTree = "<group>"; };
 		B475E526224909D200481E12 /* MyViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewProtocol.swift; sourceTree = "<group>"; };
+		B478BF0625ED41ED002E22B6 /* DefenceUnSelectorCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefenceUnSelectorCrash.h; sourceTree = "<group>"; };
+		B478BF0725ED41ED002E22B6 /* DefenceUnSelectorCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefenceUnSelectorCrash.m; sourceTree = "<group>"; };
 		B47EAE3E2417E059009DEBEE /* 20200310.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20200310.swift; sourceTree = "<group>"; };
 		B486D92323858EB20049F283 /* BYPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYPerson.h; sourceTree = "<group>"; };
 		B486D92423858EB20049F283 /* BYPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYPerson.m; sourceTree = "<group>"; };
@@ -293,6 +298,8 @@
 				B4745D5F2382E88000D35757 /* DailySwiftAlgorithms-Bridging-Header.h */,
 				B486D92323858EB20049F283 /* BYPerson.h */,
 				B486D92423858EB20049F283 /* BYPerson.m */,
+				B478BF0625ED41ED002E22B6 /* DefenceUnSelectorCrash.h */,
+				B478BF0725ED41ED002E22B6 /* DefenceUnSelectorCrash.m */,
 			);
 			path = "Objective-C";
 			sourceTree = "<group>";
@@ -445,6 +452,7 @@
 				B462CF092453459C0027AEF1 /* 20200424.swift */,
 				B462CF102457494C0027AEF1 /* 20200427.swift */,
 				B462CF3824588E470027AEF1 /* 20200428.swift */,
+				B4210B0D25F6732F00E859EF /* 20210308.swift */,
 			);
 			path = "算法解答列表";
 			sourceTree = "<group>";
@@ -511,7 +519,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = Beryter;
 				TargetAttributes = {
 					B4B2D84A2148BBB1008534BA = {
@@ -580,6 +588,7 @@
 				B427ECA2243E30AC00CC9C59 /* 20200408.swift in Sources */,
 				B40EC216243259A800AA6F13 /* 20200330.swift in Sources */,
 				B400261B224BD8980061712C /* SumTest.swift in Sources */,
+				B478BF0825ED41ED002E22B6 /* DefenceUnSelectorCrash.m in Sources */,
 				B4BFFF152428A2860001EDF7 /* Associatedtype.swift in Sources */,
 				B4BF9C4622A4182D00FEFC45 /* Test.swift in Sources */,
 				B4ACD88A22AE4AEC00C55C01 /* Heap.swift in Sources */,
@@ -632,6 +641,7 @@
 				B427EC9A2438959100CC9C59 /* 20200404.swift in Sources */,
 				B4AF8E2D22EB0D05009265F7 /* 20190726.swift in Sources */,
 				B4B2D84F2148BBB1008534BA /* AppDelegate.swift in Sources */,
+				B4210B0E25F6732F00E859EF /* 20210308.swift in Sources */,
 				B47EAE3F2417E059009DEBEE /* 20200310.swift in Sources */,
 				B486D92523858EB20049F283 /* BYPerson.m in Sources */,
 				B468F3A7230506C500F1E857 /* 20190815.swift in Sources */,
@@ -687,6 +697,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -748,6 +759,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

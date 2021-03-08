@@ -35,6 +35,12 @@
     BOOL res7 = [per isMemberOfClass:[NSObject class]]; //YES
     BOOL res8 = [per isMemberOfClass:[BYPerson class]]; //YES
     NSLog(@"res1 = %@,res2 = %@,res3 = %@,res4 = %@,res5 = %@,res6 = %@,res7 = %@,res8 = %@", @(res1), @(res2), @(res3), @(res4), @(res5), @(res6), @(res7), @(res8));
+    
+//    NSArray *list = [[NSArray alloc] init];
+//    [list makeObjectsPerformSelector:@selector(testIntrospectiveFunc)]
+//    [list enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//
+//    }]
 }
 
 @end
