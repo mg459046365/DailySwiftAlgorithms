@@ -40,7 +40,7 @@ class ViewController: UIViewController {
 //        Solution_20200408.test()
 //        Solution_20200424.test()
 //        Solution_20200427.test()
-        Solution_20210308.test()
+        Solution_20210401.test()
     }
 
     /// 求最大公约数
