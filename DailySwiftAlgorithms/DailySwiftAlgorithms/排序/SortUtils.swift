@@ -12,17 +12,19 @@ struct SortUtils {
     /// 冒泡排序  O(n^2)
     /// 原理：比较相邻的元素。如果第一个比第二个大，就交换他们。
     /// 对每一对相邻元素做同样的操作,从开始第一对到结尾的最后一对。在这一点，最后的元素该会是最大的。
-    /// 针对所有的元素重复以上的步骤，除了最后一个。
+    /// 针对所有的元素重复以上的步骤，除了最后一个(多次排序后，后面的元素都是排好序的无序再排)。
     /// 持续每次对越来越少的的元素重复上面的步骤，直到没有任何一对数字需要比较
     /// 优化点：当某次冒泡没有数据操作时，说明已经完全有序，可以停止冒泡操作了
+    /// 该方法： 使数组元素从小到大排序
     static func bubbleSort(_ list: inout [Int]) {
         guard list.count > 1 else {
             return
         }
-        for i in 0 ..< list.count {
+        for i in 0 ..< list.count - 1 {
             var flag = false
             for j in 0 ..< list.count - i - 1 {
                 if list[j] > list[j + 1] {
+                    // 数据交换
                     (list[j], list[j + 1]) = (list[j + 1], list[j])
                     // 表示有数据交换
                     flag = true
@@ -81,7 +83,7 @@ struct SortUtils {
     }
 
     /// 选择排序  O(n^2)
-    /// 原理：每一次从待排序的数据元素中选出最小（或最大）的一个元素，存放在序列的起始位置，
+    /// 原理：冒泡排序每轮排序后会将最大或最小的排在最后面，而选择排序每轮排序后会选择最小或最大放在最前面
     /// 然后再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。以此类推，直到全部待排序的数据元素排完。
     static func selectionSort(_ list: inout [Int]) {
         guard list.count > 1 else {
@@ -101,8 +103,22 @@ struct SortUtils {
     }
 
     /// 快速排序  O(nlogn)
-    /// 原理：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据都比另外一部分的所有数据都要小，
+    /// 原理：核心是在数组中寻找一个参照数，之后将数组分割成两部分，其中一部分的所有数据都大于参照数，外一部分的所有数据都要不大于参照数
+    /// 运用到了递归
     /// 然后再按此方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，以此达到整个数据变成有序序列。对冒泡排序的改进。
+    static func baseQuickSort(_ list: inout [Int]) {
+        guard list.count > 1 else { return }
+        let baseVal = list[0] //取第一个数为参照数
+        var left = [Int]() // 不大于参照数的集合
+        var right = [Int]() // 大于参照数的集合
+        for i in 1 ..< list.count {
+            list[i] > baseVal ? right.append(list[i]) : left.append(list[i])
+        }
+        baseQuickSort(&left)
+        baseQuickSort(&right)
+        list = left + [baseVal] + right
+    }
+
 //    static func quickSort(_ list: [Int]) -> [Int]{
 //
 //        guard list.count > 1 else {
