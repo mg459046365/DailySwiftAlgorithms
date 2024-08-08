@@ -108,6 +108,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		856B95552C63B4E200801A87 /* 查找算法.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "查找算法.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B400261A224BD8980061712C /* SumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumTest.swift; sourceTree = "<group>"; };
 		B408B17B260B7EEE009F6387 /* 20210324.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20210324.swift; sourceTree = "<group>"; };
 		B40E5ED722FD1B6E0073B904 /* 20190809.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20190809.swift; sourceTree = "<group>"; };
@@ -227,6 +228,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		856B95542C63B43C00801A87 /* 查找算法 */ = {
+			isa = PBXGroup;
+			children = (
+				856B95552C63B4E200801A87 /* 查找算法.playground */,
+			);
+			path = "查找算法";
+			sourceTree = "<group>";
+		};
 		B42AB91022C9EC8300EE0650 /* Swift知识点 */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +391,7 @@
 		B4B2D84D2148BBB1008534BA /* DailySwiftAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
+				856B95542C63B43C00801A87 /* 查找算法 */,
 				B4745D5E2382E83D00D35757 /* Objective-C */,
 				B43F63BC2323945F00F866C5 /* 进程&线程 */,
 				B451DFFD22E8852500D6079A /* Common */,
