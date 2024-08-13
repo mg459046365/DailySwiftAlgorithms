@@ -108,7 +108,7 @@ struct SortUtils {
     /// 然后再按此方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，以此达到整个数据变成有序序列。对冒泡排序的改进。
     static func baseQuickSort(_ list: inout [Int]) {
         guard list.count > 1 else { return }
-        let baseVal = list[0] //取第一个数为参照数
+        let baseVal = list[0] // 取第一个数为参照数
         var left = [Int]() // 不大于参照数的集合
         var right = [Int]() // 大于参照数的集合
         for i in 1 ..< list.count {
@@ -229,6 +229,7 @@ struct SortUtils {
     /// 创建最大堆（Build Max Heap）：将堆中的所有数据重新排序
     /// 堆排序（HeapSort）：移除位在第一个数据的根节点，并做最大堆调整的递归运算 [1]
     /// 数组表示堆，元素索引为i,其父节点为(i-1)/2, 左子节点为2i+1, 右子节点为2i+2
+    /// 核心： 先构造最大堆，之后将顶部的元素取出，再构造最大堆，依次进行，知道数组中的元素排序完成
     static func heapSort(_ list: inout [Int]) {
         // 从最后一个父节点开始调整
         for i in (0 ... list.count / 2 - 1).reversed() {
@@ -322,6 +323,27 @@ struct SortUtils {
             result.append(contentsOf: lt)
         }
         return result
+    }
+
+    // 桶排序
+    // 桶排序是创建一个“桶”数组，使用“桶数组”的下标作为要排序的元素的值，该下标对应的同数组种的值为该元素存在的个数，
+    // 最后通过便利“桶”数组重新排列元素
+    // 关键是创建一个与排序数组中最大元素相关的临时数组，如果要排序的数组中元素的最大值较大，会非常消耗内存
+    static func bucketSort1(_ list: inout [Int]) {
+        guard list.count > 1 else { return }
+        let max = list.max()!
+        var res = Array(repeating: 0, count: max + 1)
+        for item in list {
+            res[item] += 1 // 算出该元素有几个
+        }
+        list.removeAll()
+        for i in 0 ..< res.count {
+            var count = res[i]
+            while count > 0 {
+                list.append(i)
+                count -= 1
+            }
+        }
     }
 
     /// 计数排序，假设数组中存储的都是非负数
